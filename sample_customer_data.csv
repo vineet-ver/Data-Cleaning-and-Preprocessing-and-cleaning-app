@@ -1,0 +1,1051 @@
+customer_id,name,age,income,city,registration_date,purchase_amount,category,rating,email_verified
+1,Customer_1,41.0,70990.33,Philadelphia,2021-03-11,190.1,Books,3,False
+2,Customer_2,33.0,,San Antonio,2020-10-16,22.51,Home,5,True
+3,Customer_3,43.0,50894.46,Philadelphia,2020-08-12,272.47,Sports,3,False
+4,Customer_4,53.0,40295.95,Chicago,2021-06-12,,Home,2,False
+5,Customer_5,32.0,60473.35,Chicago,2020-10-21,173.32,Clothing,1,False
+6,Customer_6,32.0,,San Diego,2020-11-10,81.24,Sports,5,True
+7,Customer_7,54.0,63427.9,Chicago,2021-12-20,151.19,Home,3,False
+8,Customer_8,44.0,59527.58,Philadelphia,2022-11-26,1.63,Home,4,True
+9,Customer_9,29.0,65743.29,Houston,2021-10-22,170.58,Sports,2,True
+10,Customer_10,42.0,41971.47,Phoenix,2020-03-25,4.1,Clothing,1,True
+11,Customer_11,unknown,69760.91,Phoenix,2020-03-23,220.65,Home,2,True
+12,Customer_12,29.0,52963.99,San Diego,2022-11-07,482.37,Sports,4,False
+13,Customer_13,38.0,81128.91,Los Angeles,2020-11-21,34.82,Clothing,1,False
+14,Customer_14,12.0,39662.18,Phoenix,2020-04-10,23.61,Sports,4,False
+15,Customer_15,14.0,76039.46,Phoenix,2021-10-17,144.97,Sports,2,False
+16,Customer_16,28.0,52968.66,Chicago,2021-11-13,29.17,Home,3,True
+17,Customer_17,23.0,40228.73,Chicago,2021-12-11,200.67,Clothing,2,True
+18,Customer_18,,42741.71,Philadelphia,2020-10-19,10.85,Home,2,True
+19,Customer_19,24.0,45194.79,San Diego,2020-01-17,13.46,Electronics,2,True
+20,Customer_20,18.0,56362.49,Los Angeles,2022-11-22,387.05,Electronics,5,False
+21,Customer_21,53.0,57842.53,San Diego,2020-10-01,112.04,Clothing,4,True
+22,Customer_22,32.0,41394.5,New York,2022-01-10,187.66,Sports,4,False
+23,Customer_23,36.0,,,2022-02-12,39.2,Home,4,True
+24,Customer_24,,82134.06,Los Angeles,2021-10-29,112.85,Home,5,True
+25,Customer_25,28.0,75913.15,Los Angeles,2020-12-08,90.2,Clothing,3,True
+26,Customer_26,,not_provided,Houston,2020-10-23,92.42,Clothing,2,True
+27,Customer_27,21.0,50570.05,San Diego,2021-10-16,114.74,Electronics,3,False
+28,Customer_28,40.0,51800.47,Philadelphia,2022-08-06,85.65,Books,5,False
+29,Customer_29,28.0,59202.77,Houston,2022-11-02,56.05,Clothing,4,False
+30,Customer_30,31.0,34658.11,Los Angeles,2020-04-25,32.29,Books,2,False
+31,Customer_31,28.0,46139.35,Los Angeles,2020-06-18,,Clothing,1,True
+32,Customer_32,57.0,24971.24,Los Angeles,2022-10-31,25.65,Sports,1,True
+33,Customer_33,35.0,,Phoenix,2022-03-17,,Sports,3,False
+34,Customer_34,,59707.94,San Diego,2022-08-24,26.57,Electronics,4,False
+35,Customer_35,,42752.2,San Antonio,2020-08-09,98.17,Electronics,1,True
+36,Customer_36,20.0,73609.8,San Antonio,2021-10-05,,Books,3,True
+37,Customer_37,38.0,31613.52,Houston,2022-02-06,24.68,Clothing,5,False
+38,Customer_38,11.0,28034.38,Los Angeles,2022-01-14,6.18,Home,3,False
+39,Customer_39,19.0,53366.78,San Antonio,2021-03-22,14.04,Electronics,3,False
+40,Customer_40,37.0,65706.47,Chicago,2020-01-17,93.14,Home,3,True
+41,Customer_41,44.0,75258.92,San Diego,2021-09-30,189.34,Home,2,False
+42,Customer_42,37.0,43116.74,San Antonio,2020-10-04,4.6,Clothing,3,False
+43,Customer_43,34.0,,Philadelphia,2021-05-08,132.48,Books,3,False
+44,Customer_44,31.0,49422.37,San Diego,2022-11-14,41.75,Clothing,2,False
+45,Customer_45,,47410.59,Philadelphia,2021-03-12,65.11,Electronics,2,False
+46,Customer_46,26.0,63254.9,San Antonio,2022-07-08,264.31,Home,5,True
+47,Customer_47,29.0,59784.84,Chicago,2020-07-25,40.34,Clothing,4,False
+48,Customer_48,48.0,26354.12,Philadelphia,2022-01-06,62.61,Clothing,1,True
+49,Customer_49,39.0,72148.11,Phoenix,2022-12-05,1.38,Clothing,1,False
+50,Customer_50,14.0,70701.37,San Antonio,2020-04-21,8.51,Electronics,3,False
+51,Customer_51,39.0,40616.56,Phoenix,2020-01-10,29.92,Books,excellent,False
+52,Customer_52,30.0,55937.05,San Antonio,2021-04-19,2.82,Clothing,3,True
+53,Customer_53,27.0,57410.45,New York,2020-04-11,99.8,Electronics,1,True
+54,Customer_54,42.0,53910.11,New York,2022-03-30,55.58,Home,2,True
+55,Customer_55,47.0,41745.42,New York,2022-09-28,79.44,Sports,4,False
+56,Customer_56,46.0,39925.65,Philadelphia,2021-04-20,19.19,Electronics,5,False
+57,Customer_57,25.0,49616.69,Phoenix,2020-10-10,35.09,Sports,2,True
+58,Customer_58,,67590.94,Phoenix,2021-04-20,109.01,Clothing,4,True
+59,Customer_59,39.0,58154.0,Phoenix,2022-03-03,336.11,Clothing,5,False
+60,Customer_60,47.0,44440.79,Chicago,2020-01-10,5.17,Electronics,5,True
+61,Customer_61,29.0,61575.48,Phoenix,2021-10-07,221.08,Sports,1,False
+62,Customer_62,33.0,7271.86,Chicago,2021-11-02,86.01,Clothing,2,True
+63,Customer_63,22.0,67231.49,New York,2021-11-29,82.99,Home,5,True
+64,Customer_64,21.0,23904.29,New York,2020-09-22,69.37,Books,5,True
+65,Customer_65,45.0,44563.39,Philadelphia,2022-02-20,7.19,Books,4,False
+66,Customer_66,51.0,33204.95,San Antonio,2020-04-10,9.42,Clothing,1,False
+67,Customer_67,34.0,30579.78,New York,2020-08-06,,Sports,3,True
+68,Customer_68,47.0,67412.4,San Antonio,2022-08-18,41.7,Clothing,1,False
+69,Customer_69,39.0,42984.48,San Antonio,2022-03-19,249.21,Sports,3,False
+70,Customer_70,27.0,55197.56,San Diego,2020-01-16,52.19,Home,2,False
+71,Customer_71,39.0,49296.19,Philadelphia,2020-09-28,15.46,Sports,2,False
+72,Customer_72,53.0,57155.61,Los Angeles,2020-08-22,125.43,Clothing,5,True
+73,Customer_73,35.0,51152.33,Los Angeles,2020-10-23,,Home,2,False
+74,Customer_74,54.0,30755.12,Houston,2020-09-28,74.54,Electronics,5,False
+75,Customer_75,4.0,64944.0,San Diego,2020-03-09,,Books,1,True
+76,Customer_76,45.0,,Philadelphia,2021-05-17,230.52,Clothing,2,False
+77,Customer_77,36.0,26651.27,Houston,2022-03-13,157.11,Clothing,1,False
+78,Customer_78,31.0,43578.27,Houston,2021-10-26,112.81,Clothing,1,False
+79,Customer_79,,72511.4,San Diego,2022-01-06,113.83,Home,2,True
+80,Customer_80,11.0,62753.33,Los Angeles,2020-03-29,291.74,Electronics,1,True
+81,Customer_81,32.0,44770.22,Philadelphia,2022-11-07,35.07,Sports,2,False
+82,Customer_82,39.0,44761.13,Los Angeles,2022-07-07,0.11,Electronics,2,False
+83,Customer_83,53.0,45175.47,Houston,2022-05-31,31.74,Home,2,True
+84,Customer_84,29.0,81151.22,Philadelphia,2022-06-20,24.58,Clothing,3,True
+85,Customer_85,25.0,55729.03,Houston,2022-10-18,108.42,Books,1,True
+86,Customer_86,29.0,56450.62,Phoenix,2021-08-18,100.43,Clothing,4,False
+87,Customer_87,46.0,65454.25,San Diego,2020-08-07,90.01,Sports,2,False
+88,Customer_88,39.0,53581.84,San Antonio,2021-11-06,1.64,Books,1,True
+89,Customer_89,29.0,46114.37,Philadelphia,2022-03-24,130.48,Clothing,5,False
+90,Customer_90,41.0,47054.75,Philadelphia,2022-03-19,39.09,Books,2,False
+91,Customer_91,36.0,48925.98,San Antonio,2021-07-24,,Electronics,2,False
+92,Customer_92,,49441.67,Houston,2020-03-15,,Home,4,False
+93,Customer_93,27.0,60914.44,Phoenix,2021-02-10,41.97,Clothing,3,False
+94,Customer_94,31.0,50779.19,Chicago,2022-10-05,14.45,Sports,3,False
+95,Customer_95,30.0,60989.6,San Antonio,2021-10-01,9.92,Electronics,2,False
+96,Customer_96,17.0,48789.25,San Diego,2021-08-12,178.09,Clothing,1,True
+97,Customer_97,39.0,51179.53,,2020-10-21,250.59,Electronics,5,True
+98,Customer_98,38.0,20026.99,,2021-02-07,104.92,Sports,5,True
+99,Customer_99,35.0,63744.92,San Antonio,2022-09-07,10.92,Clothing,1,True
+100,Customer_100,32.0,55197.33,San Antonio,2021-12-30,51.42,Sports,2,True
+101,Customer_101,150,64970.15,Philadelphia,2022-05-12,130.54,Books,5,True
+102,Customer_102,,6556.17,Los Angeles,2021-05-12,151.33,Sports,3,True
+103,Customer_103,31.0,,Los Angeles,2021-11-21,12.58,Books,1,True
+104,Customer_104,25.0,47906.16,San Diego,2020-09-28,0.0,Clothing,4,True
+105,Customer_105,,66622.74,Los Angeles,2022-02-11,124.53,Books,2,False
+106,Customer_106,40.0,34401.41,San Antonio,2021-04-13,44.1,Clothing,1,False
+107,Customer_107,58.0,59191.61,Chicago,2021-04-29,29.37,Clothing,5,True
+108,Customer_108,,34198.77,New York,2021-12-12,1.3,Home,2,False
+109,Customer_109,38.0,40643.47,Houston,2022-10-22,77.72,Clothing,3,False
+110,Customer_110,34.0,78710.47,New York,2020-03-11,190.48,Books,2,True
+111,Customer_111,12.0,47139.76,San Antonio,2022-06-22,316.14,Home,2,True
+112,Customer_112,35.0,53261.49,New York,2020-11-16,83.41,Home,3,True
+113,Customer_113,36.0,63051.02,San Antonio,2021-05-01,72.25,Clothing,3,False
+114,Customer_114,65.0,57435.23,New York,2020-01-24,8.89,Sports,2,False
+115,Customer_115,33.0,52256.28,Los Angeles,2020-11-25,79.6,Sports,3,True
+116,Customer_116,39.0,55474.42,Phoenix,2021-07-04,47.8,Home,1,False
+117,Customer_117,35.0,86051.23,Los Angeles,2020-03-02,93.43,Clothing,3,False
+118,Customer_118,21.0,,Los Angeles,2021-06-21,49.22,Sports,3,False
+119,Customer_119,,53016.49,San Diego,2022-10-12,27.48,Clothing,2,True
+120,Customer_120,44.0,65759.82,Philadelphia,2020-04-25,9.98,Clothing,1,False
+121,Customer_121,44.0,66582.89,Philadelphia,2022-04-17,37.82,Home,4,False
+122,Customer_122,24.0,67805.45,New York,2021-03-24,10.16,Home,4,False
+123,Customer_123,52.0,59580.95,San Antonio,2021-12-18,,Electronics,5,False
+124,Customer_124,18.0,,San Diego,2020-10-11,436.9,Sports,3,False
+125,Customer_125,42.0,74501.47,Los Angeles,2020-06-23,58.72,Sports,3,False
+126,Customer_126,61.0,32804.82,San Diego,2020-06-24,75.9,Sports,1,False
+127,Customer_127,23.0,54539.53,New York,2020-03-18,206.85,Books,4,True
+128,Customer_128,28.0,38685.86,Philadelphia,2020-07-22,541.91,Clothing,5,True
+129,Customer_129,36.0,49037.92,Phoenix,2021-12-28,,Home,1,False
+130,Customer_130,,54931.44,Houston,2022-08-23,167.38,Sports,3,True
+131,Customer_131,16.0,54820.36,New York,2022-06-10,39.59,Electronics,4,False
+132,Customer_132,36.0,56328.81,San Diego,2022-01-20,36.49,Sports,5,False
+133,Customer_133,,74205.67,Phoenix,2020-04-30,51.53,Clothing,2,False
+134,Customer_134,41.0,56803.01,Houston,2020-11-12,111.63,Clothing,4,True
+135,Customer_135,24.0,46337.65,Chicago,2020-12-05,114.63,Home,5,False
+136,Customer_136,54.0,64461.31,,2020-09-30,37.87,Books,1,False
+137,Customer_137,26.0,67842.06,New York,2021-07-17,14.3,Home,2,True
+138,Customer_138,31.0,31585.88,Chicago,2021-08-09,100.07,Sports,5,True
+139,Customer_139,45.0,58961.0,Chicago,2021-01-25,13.73,Electronics,5,False
+140,Customer_140,,60517.59,New York,2021-01-22,86.39,Home,3,True
+141,Customer_141,38.0,45536.55,Chicago,2022-06-26,118.23,Books,4,True
+142,Customer_142,51.0,70635.6,Los Angeles,2022-05-14,120.6,Home,3,False
+143,Customer_143,16.0,47749.17,Houston,2020-12-03,140.03,Clothing,2,False
+144,Customer_144,37.0,51883.65,Houston,2022-09-27,206.25,Sports,5,False
+145,Customer_145,38.0,47403.92,Houston,2022-11-09,69.31,Sports,3,True
+146,Customer_146,44.0,50233.69,Los Angeles,2020-12-23,131.03,Sports,4,True
+147,Customer_147,20.0,33555.87,San Antonio,2021-01-23,96.54,Sports,2,True
+148,Customer_148,19.0,28399.24,Chicago,2021-07-07,,Sports,1,False
+149,Customer_149,41.0,73917.58,Phoenix,2022-10-27,2.6,Sports,3,True
+150,Customer_150,39.0,37295.58,Chicago,2022-08-17,33.48,Electronics,2,True
+151,Customer_151,38.0,35129.11,New York,2020-04-22,58.53,Books,1,False
+152,Customer_152,,17699.15,Philadelphia,2021-03-06,96.0,Sports,3,False
+153,Customer_153,,,San Diego,2021-08-28,,Books,2,False
+154,Customer_154,38.0,30153.65,San Diego,2021-07-04,21.85,Sports,2,True
+155,Customer_155,,,Houston,2020-07-31,13.42,Home,3,False
+156,Customer_156,26.0,,Chicago,2022-07-29,330.99,Sports,2,True
+157,Customer_157,57.0,39677.74,,2022-01-11,11.43,Clothing,5,True
+158,Customer_158,41.0,83786.54,New York,2022-07-06,65.1,Electronics,3,False
+159,Customer_159,21.0,64726.48,Los Angeles,2022-07-29,88.08,Home,2,False
+160,Customer_160,43.0,45127.53,San Antonio,2022-03-30,77.95,Home,1,False
+161,Customer_161,23.0,12508.91,Los Angeles,2021-04-25,9.0,Clothing,1,False
+162,Customer_162,,84364.14,Phoenix,2021-10-30,5.87,Sports,5,False
+163,Customer_163,49.0,29156.41,New York,2020-06-24,11.15,Electronics,3,True
+164,Customer_164,25.0,25319.02,Houston,2022-01-07,88.09,Home,2,True
+165,Customer_165,47.0,65338.56,Chicago,2020-07-15,78.6,Electronics,2,True
+166,Customer_166,40.0,86596.29,New York,2022-01-29,26.62,Home,1,False
+167,Customer_167,45.0,70764.09,San Diego,2020-09-08,101.55,Sports,5,True
+168,Customer_168,58.0,58458.64,San Antonio,2020-05-08,171.52,Home,1,False
+169,Customer_169,32.0,58921.32,Los Angeles,2020-06-29,4.25,Home,1,False
+170,Customer_170,26.0,62801.23,San Antonio,2020-01-03,68.94,Books,5,True
+171,Customer_171,24.0,61383.93,San Antonio,2022-02-26,116.9,Sports,3,True
+172,Customer_172,,54217.87,Phoenix,2022-03-12,29.08,Clothing,2,False
+173,Customer_173,34.0,51563.02,Phoenix,2021-07-17,36.78,Clothing,3,True
+174,Customer_174,,49061.1,Chicago,2020-06-25,,Sports,4,False
+175,Customer_175,38.0,38690.53,Phoenix,2020-04-01,228.21,Clothing,4,True
+176,Customer_176,45.0,45789.87,Phoenix,2020-01-21,166.03,Sports,4,True
+177,Customer_177,35.0,24605.65,New York,2020-06-30,87.5,Clothing,5,True
+178,Customer_178,52.0,48524.91,San Diego,2022-09-02,131.02,Books,1,True
+179,Customer_179,32.0,35171.13,Houston,2020-09-21,45.39,Clothing,3,True
+180,Customer_180,68.0,33446.16,Chicago,2021-01-22,102.43,Home,2,False
+181,Customer_181,43.0,52698.41,New York,2020-04-25,62.77,Sports,4,True
+182,Customer_182,,70880.03,Houston,2020-08-31,,Electronics,3,True
+183,Customer_183,22.0,63774.75,San Antonio,2021-07-22,120.98,Electronics,4,True
+184,Customer_184,41.0,26442.49,New York,2021-10-27,81.3,Sports,4,False
+185,Customer_185,,35155.58,Philadelphia,2020-09-25,44.41,Books,2,False
+186,Customer_186,44.0,64111.57,New York,2020-03-04,242.29,Clothing,5,False
+187,Customer_187,41.0,35262.69,Phoenix,2021-03-04,2.12,Books,1,False
+188,Customer_188,34.0,46630.5,Houston,2020-09-13,37.95,Electronics,5,False
+189,Customer_189,25.0,58250.78,Chicago,2020-08-28,5.86,Sports,3,True
+190,Customer_190,17.0,35474.83,Chicago,2022-11-17,145.47,Sports,5,True
+191,Customer_191,30.0,51580.63,Houston,2021-11-05,121.1,Books,3,True
+192,Customer_192,45.0,29989.62,Phoenix,2021-09-01,40.25,Books,3,False
+193,Customer_193,38.0,40979.49,Los Angeles,2021-03-31,112.6,Clothing,1,False
+194,Customer_194,,54796.73,New York,2021-04-14,50.41,Home,2,True
+195,Customer_195,37.0,26105.09,Phoenix,2021-08-15,141.16,Home,1,False
+196,Customer_196,40.0,56607.12,Philadelphia,2022-02-01,60.55,Clothing,5,False
+197,Customer_197,24.0,49705.43,San Diego,2022-02-07,53.15,Home,3,False
+198,Customer_198,37.0,58287.35,San Antonio,2020-07-07,272.92,Electronics,4,True
+199,Customer_199,36.0,,Houston,2021-07-01,28.89,Home,4,True
+200,Customer_200,21.0,70462.11,San Diego,2021-03-27,12.83,Clothing,3,False
+201,Customer_201,39.0,-5000,New York,2022-08-11,87.84,Home,1,False
+202,Customer_202,,43558.92,Chicago,2021-11-22,348.42,Sports,2,False
+203,Customer_203,48.0,51834.46,San Antonio,2021-08-06,47.46,Books,1,False
+204,Customer_204,48.0,58149.47,San Diego,2020-05-06,6.4,Electronics,3,True
+205,Customer_205,18.0,50732.9,Los Angeles,2021-10-25,41.45,Sports,3,False
+206,Customer_206,,,San Diego,2020-05-08,70.51,Sports,2,True
+207,Customer_207,41.0,39470.12,Philadelphia,2021-01-04,17.66,Clothing,5,True
+208,Customer_208,41.0,40056.49,,2020-06-05,107.32,Books,5,True
+209,Customer_209,41.0,28960.92,Houston,2022-01-27,609.66,Books,2,False
+210,Customer_210,81.0,76243.65,New York,2020-08-13,60.1,Electronics,5,True
+211,Customer_211,42.0,31342.05,Houston,2021-03-05,43.81,Clothing,4,True
+212,Customer_212,,39606.42,San Antonio,2022-09-07,51.2,Electronics,5,False
+213,Customer_213,46.0,39223.89,New York,2020-08-11,12.23,Home,5,False
+214,Customer_214,43.0,63423.87,Phoenix,2021-07-10,214.79,Sports,5,False
+215,Customer_215,31.0,,Los Angeles,2021-04-04,53.58,Electronics,4,True
+216,Customer_216,44.0,68716.13,Phoenix,2020-01-20,48.98,Sports,5,False
+217,Customer_217,26.0,39897.64,Phoenix,2022-05-18,107.79,Clothing,4,True
+218,Customer_218,32.0,54184.91,Houston,2020-03-16,58.35,Home,2,True
+219,Customer_219,29.0,37469.79,San Antonio,2021-06-03,104.48,Clothing,1,False
+220,Customer_220,,82177.24,Los Angeles,2021-09-05,6.34,Home,2,True
+221,Customer_221,63.0,32186.02,San Diego,2021-11-19,168.05,Home,1,True
+222,Customer_222,13.0,54647.31,New York,2022-01-24,282.18,Sports,2,True
+223,Customer_223,43.0,59506.65,,2020-10-04,104.63,Clothing,1,True
+224,Customer_224,16.0,,Philadelphia,2020-01-11,309.15,Clothing,1,False
+225,Customer_225,29.0,47220.69,,2022-03-03,16.42,Electronics,3,True
+226,Customer_226,48.0,48052.69,Philadelphia,2021-08-09,64.9,Clothing,1,False
+227,Customer_227,36.0,50657.17,San Diego,2022-07-04,92.08,Electronics,1,True
+228,Customer_228,22.0,47794.97,Philadelphia,2022-06-18,87.16,Books,3,True
+229,Customer_229,26.0,64458.19,New York,2022-07-12,,Books,5,False
+230,Customer_230,43.0,,Houston,2021-06-15,41.26,Books,5,True
+231,Customer_231,26.0,41637.62,Phoenix,2020-12-31,13.56,Clothing,3,True
+232,Customer_232,38.0,29452.96,San Antonio,2022-05-16,49.72,Clothing,4,True
+233,Customer_233,36.0,48675.77,Phoenix,2021-05-09,17.75,Electronics,1,True
+234,Customer_234,27.0,88695.64,Phoenix,2020-07-19,132.56,Home,1,True
+235,Customer_235,61.0,37944.88,Los Angeles,2022-07-25,23.42,Electronics,3,True
+236,Customer_236,,74586.75,New York,2022-08-24,6.04,Books,3,False
+237,Customer_237,11.0,75165.51,San Diego,2021-05-25,80.38,Electronics,4,False
+238,Customer_238,37.0,41696.18,San Diego,2020-03-23,90.44,Home,5,False
+239,Customer_239,27.0,58534.75,San Antonio,2021-02-28,205.5,Clothing,2,True
+240,Customer_240,45.0,74425.95,Houston,2022-05-29,86.03,Electronics,5,True
+241,Customer_241,25.0,44313.08,Los Angeles,2022-09-14,42.39,Books,1,True
+242,Customer_242,34.0,46946.29,Chicago,2020-08-10,162.46,Books,3,False
+243,Customer_243,,41274.79,Houston,2020-03-14,77.71,Clothing,4,True
+244,Customer_244,45.0,34778.65,Philadelphia,2022-08-18,8.26,Electronics,5,False
+245,Customer_245,21.0,40260.84,Houston,2021-03-02,83.44,Home,4,True
+246,Customer_246,,,Houston,2021-08-16,238.62,Clothing,5,True
+247,Customer_247,29.0,50511.25,Phoenix,2022-11-26,50.47,Electronics,1,True
+248,Customer_248,27.0,38450.4,Houston,2020-03-13,35.14,Sports,2,False
+249,Customer_249,,53506.79,San Diego,2021-12-10,15.49,Books,4,True
+250,Customer_250,,26661.57,Philadelphia,2020-03-22,16.42,Home,4,False
+251,Customer_251,,54963.2,Philadelphia,2021-02-15,56.7,Home,2,True
+252,Customer_252,46.0,62502.93,New York,2022-05-30,90.55,Home,4,True
+253,Customer_253,60.0,20093.97,Houston,2021-04-19,8.41,Books,4,False
+254,Customer_254,47.0,55610.85,Phoenix,2022-12-27,280.62,Electronics,5,True
+255,Customer_255,17.0,68415.03,Houston,2021-09-04,140.7,Clothing,5,True
+256,Customer_256,29.0,31855.38,Chicago,2020-12-17,88.34,Electronics,2,True
+257,Customer_257,50.0,75088.59,Chicago,2020-08-29,176.28,Clothing,1,True
+258,Customer_258,27.0,56285.29,Phoenix,2021-01-18,8.36,Home,4,False
+259,Customer_259,40.0,39424.82,New York,2021-02-11,64.79,Electronics,1,False
+260,Customer_260,44.0,49163.46,New York,2020-03-16,99.45,Home,2,True
+261,Customer_261,24.0,58374.9,Philadelphia,2021-02-08,176.41,Sports,2,True
+262,Customer_262,34.0,51140.08,Philadelphia,2021-05-23,153.0,Home,5,False
+263,Customer_263,-4.0,58081.34,Los Angeles,2022-03-02,32.44,Home,4,True
+264,Customer_264,23.0,36189.9,Phoenix,2021-12-20,282.82,Clothing,3,False
+265,Customer_265,32.0,52540.41,Houston,2022-02-15,13.28,Sports,2,True
+266,Customer_266,,28794.28,San Antonio,2020-01-10,208.05,Home,4,False
+267,Customer_267,55.0,48331.61,,2020-08-26,353.84,Home,1,False
+268,Customer_268,18.0,36441.39,Los Angeles,2021-12-25,19.5,Sports,5,False
+269,Customer_269,30.0,38967.05,Philadelphia,2021-06-13,128.04,Sports,1,False
+270,Customer_270,37.0,,Phoenix,2020-01-06,4.11,Electronics,2,True
+271,Customer_271,52.0,66369.65,Phoenix,2022-05-30,51.99,Clothing,2,True
+272,Customer_272,18.0,59137.07,Philadelphia,2022-04-26,72.63,Sports,1,False
+273,Customer_273,49.0,33615.31,San Diego,2021-08-23,86.9,Sports,2,False
+274,Customer_274,35.0,45253.87,Los Angeles,2020-03-13,274.79,Books,4,False
+275,Customer_275,23.0,68196.47,Philadelphia,2022-04-19,111.55,Sports,2,False
+276,Customer_276,41.0,52125.75,New York,2021-10-01,65.64,Clothing,5,True
+277,Customer_277,37.0,,Houston,2022-05-06,165.9,Home,4,False
+278,Customer_278,28.0,55899.77,Philadelphia,2022-04-03,300.64,Home,3,False
+279,Customer_279,,52880.74,Los Angeles,2022-05-29,2.23,Home,2,False
+280,Customer_280,30.0,45363.25,Chicago,2021-07-21,404.68,Home,2,False
+281,Customer_281,36.0,52003.11,New York,2020-06-02,9.01,Books,5,False
+282,Customer_282,43.0,47712.95,Chicago,2022-01-04,168.41,Sports,5,False
+283,Customer_283,54.0,,San Antonio,2021-11-10,32.9,Home,1,False
+284,Customer_284,,64350.53,Philadelphia,2022-03-23,14.18,Electronics,1,True
+285,Customer_285,61.0,38210.16,New York,2020-07-05,57.96,Home,1,False
+286,Customer_286,12.0,30031.51,Houston,2020-08-01,103.27,Sports,5,False
+287,Customer_287,33.0,22456.92,Philadelphia,2022-09-01,47.96,Home,1,False
+288,Customer_288,42.0,57619.87,Houston,2022-04-01,5.61,Books,1,True
+289,Customer_289,38.0,33449.5,San Diego,2022-09-21,91.49,Clothing,3,True
+290,Customer_290,28.0,17706.64,Phoenix,2022-04-10,232.69,Clothing,1,True
+291,Customer_291,33.0,55828.68,Chicago,2021-10-15,,Sports,2,False
+292,Customer_292,29.0,87394.99,New York,2021-12-17,24.38,Clothing,5,False
+293,Customer_293,28.0,49908.94,Houston,2022-08-31,58.44,Clothing,4,False
+294,Customer_294,45.0,62577.36,Los Angeles,2021-09-25,4.96,Electronics,3,True
+295,Customer_295,,51227.44,Houston,2021-11-23,171.75,Sports,5,False
+296,Customer_296,27.0,48516.66,Los Angeles,2020-06-20,175.07,Sports,5,True
+297,Customer_297,46.0,63786.15,Philadelphia,2021-06-02,,Clothing,2,True
+298,Customer_298,39.0,45645.88,New York,2022-02-23,43.56,Clothing,1,True
+299,Customer_299,45.0,54010.88,Houston,2020-10-23,160.84,Clothing,2,True
+300,Customer_300,43.0,54825.47,San Antonio,2020-08-09,80.9,Books,1,True
+301,Customer_301,25.0,39978.64,Houston,2020-12-09,174.83,Home,1,False
+302,Customer_302,28.0,64880.64,San Diego,2020-09-21,99.82,Books,5,False
+303,Customer_303,44.0,47375.6,San Antonio,2020-08-23,153.44,Sports,1,True
+304,Customer_304,,38663.82,New York,2021-04-10,91.27,Electronics,3,False
+305,Customer_305,,58047.65,San Diego,2022-09-21,53.47,Home,3,False
+306,Customer_306,36.0,36522.98,Houston,2021-07-09,316.88,Electronics,3,True
+307,Customer_307,50.0,50422.72,,2020-07-24,77.9,Sports,5,True
+308,Customer_308,28.0,49863.22,Houston,2020-03-25,92.91,Sports,2,False
+309,Customer_309,42.0,66288.43,Chicago,2022-02-01,24.91,Electronics,4,False
+310,Customer_310,,57120.47,Philadelphia,2021-02-23,98.26,Electronics,1,False
+311,Customer_311,32.0,49624.6,Phoenix,2022-06-18,84.77,Electronics,4,False
+312,Customer_312,48.0,62266.49,Los Angeles,2021-12-23,20.44,Sports,2,True
+313,Customer_313,45.0,70853.11,Chicago,2022-05-21,6.14,Clothing,2,False
+314,Customer_314,45.0,58367.15,San Antonio,2020-10-24,92.72,Electronics,5,True
+315,Customer_315,,,Philadelphia,2022-01-28,144.26,Home,3,True
+316,Customer_316,35.0,30322.46,New York,2020-10-16,74.11,Sports,3,False
+317,Customer_317,43.0,34023.3,Los Angeles,2022-10-25,25.72,Books,2,False
+318,Customer_318,31.0,45421.63,Phoenix,2021-11-27,109.82,Books,5,False
+319,Customer_319,39.0,40857.32,Philadelphia,2020-12-21,8.35,Home,5,True
+320,Customer_320,33.0,47195.43,San Antonio,2020-10-22,58.31,Clothing,1,True
+321,Customer_321,36.0,50849.75,San Diego,2020-07-28,17.84,Electronics,3,True
+322,Customer_322,42.0,57945.39,San Diego,2022-01-30,20.39,Sports,2,True
+323,Customer_323,25.0,48942.52,Phoenix,2020-08-27,22.6,Electronics,4,False
+324,Customer_324,,57297.52,New York,2021-10-13,48.89,Sports,3,True
+325,Customer_325,23.0,50967.12,New York,2020-10-16,5.25,Books,1,True
+326,Customer_326,20.0,20368.0,San Antonio,2021-12-25,50.72,Electronics,5,False
+327,Customer_327,49.0,35909.97,,2022-06-11,,Home,2,True
+328,Customer_328,44.0,,San Antonio,2022-05-01,66.03,Clothing,3,True
+329,Customer_329,42.0,31854.58,Houston,2022-04-13,48.25,Home,4,False
+330,Customer_330,43.0,58998.93,New York,2020-07-24,182.73,Clothing,1,True
+331,Customer_331,35.0,72961.26,Philadelphia,2020-04-06,15.7,Electronics,1,True
+332,Customer_332,24.0,68281.43,Houston,2022-02-04,70.46,Electronics,3,True
+333,Customer_333,36.0,46798.36,San Diego,2021-02-07,6.4,Clothing,4,True
+334,Customer_334,27.0,72360.89,San Diego,2021-04-18,7.38,Books,1,False
+335,Customer_335,47.0,52230.01,Chicago,2020-02-04,85.3,Sports,2,True
+336,Customer_336,33.0,44943.71,Phoenix,2020-10-11,83.48,Home,1,False
+337,Customer_337,25.0,40798.96,Houston,2020-02-06,210.4,Home,4,True
+338,Customer_338,31.0,45462.95,Phoenix,2022-08-20,81.62,Home,5,False
+339,Customer_339,40.0,44177.35,,2020-09-23,321.37,Electronics,5,False
+340,Customer_340,28.0,52556.24,,2021-09-02,4.99,Home,3,False
+341,Customer_341,25.0,52408.61,San Antonio,2020-02-12,10.31,Sports,4,True
+342,Customer_342,38.0,50045.69,Chicago,2021-12-31,4.51,Sports,1,True
+343,Customer_343,,56554.07,New York,2020-12-19,20.49,Clothing,1,True
+344,Customer_344,29.0,67859.69,San Diego,2022-09-10,77.93,Electronics,5,False
+345,Customer_345,,64243.31,Chicago,2022-08-30,103.73,Sports,5,True
+346,Customer_346,38.0,27726.53,,2020-12-22,4.67,Books,2,True
+347,Customer_347,18.0,11691.18,New York,2022-09-13,291.82,Electronics,5,True
+348,Customer_348,18.0,64014.8,San Antonio,2022-12-26,184.62,Electronics,2,True
+349,Customer_349,26.0,29496.82,New York,2022-06-22,35.18,Sports,1,False
+350,Customer_350,32.0,46628.52,San Diego,2022-07-14,8.03,Books,2,False
+351,Customer_351,39.0,32448.3,San Diego,2020-09-29,18.62,Clothing,2,True
+352,Customer_352,53.0,22970.29,Phoenix,2021-09-23,,Sports,3,True
+353,Customer_353,45.0,,Philadelphia,2020-03-14,13.16,Books,5,True
+354,Customer_354,,61387.33,Chicago,2020-04-13,73.1,Electronics,2,False
+355,Customer_355,35.0,41352.34,Houston,2022-12-29,28.22,Books,1,True
+356,Customer_356,23.0,11134.37,San Diego,2020-12-23,44.34,Electronics,4,False
+357,Customer_357,35.0,,Chicago,2022-03-30,455.69,Sports,2,False
+358,Customer_358,,55877.06,Phoenix,2022-06-02,115.3,Sports,5,True
+359,Customer_359,39.0,27816.33,New York,2022-07-28,297.56,Home,3,True
+360,Customer_360,,52750.4,Phoenix,2022-12-28,15.38,Home,1,True
+361,Customer_361,41.0,49770.35,Los Angeles,2020-09-21,48.15,Home,3,False
+362,Customer_362,53.0,58689.37,Los Angeles,2020-02-14,80.91,Sports,4,False
+363,Customer_363,34.0,51793.71,Houston,2021-03-26,7.99,Clothing,2,True
+364,Customer_364,40.0,35403.97,Phoenix,2020-05-22,0.42,Sports,2,False
+365,Customer_365,43.0,67948.57,San Antonio,2020-01-25,111.0,Books,5,True
+366,Customer_366,30.0,47622.06,Houston,2021-01-29,,Sports,2,True
+367,Customer_367,,49590.43,San Antonio,2022-05-08,52.9,Sports,1,False
+368,Customer_368,,36000.98,Houston,2021-09-11,67.26,Electronics,4,False
+369,Customer_369,,,Los Angeles,2020-12-08,53.69,Electronics,3,False
+370,Customer_370,,36727.96,Houston,2021-12-17,2.43,Electronics,4,False
+371,Customer_371,35.0,,Los Angeles,2020-09-11,40.85,Sports,2,True
+372,Customer_372,41.0,75675.63,San Diego,2020-01-16,19.49,Clothing,3,True
+373,Customer_373,52.0,29421.48,New York,2022-04-16,10.36,Books,5,True
+374,Customer_374,47.0,25796.58,San Antonio,2021-11-13,314.01,Books,4,False
+375,Customer_375,61.0,72067.55,Phoenix,2022-04-14,91.47,Clothing,3,True
+376,Customer_376,26.0,46860.14,San Diego,2020-02-12,130.44,Clothing,3,False
+377,Customer_377,45.0,39963.91,San Diego,2022-07-05,37.89,Books,3,False
+378,Customer_378,,65598.57,Houston,2021-11-09,49.95,Home,1,False
+379,Customer_379,61.0,40915.77,Los Angeles,2021-09-08,27.04,Electronics,4,True
+380,Customer_380,25.0,77390.15,Chicago,2021-11-14,10.2,Electronics,3,False
+381,Customer_381,25.0,60168.89,San Antonio,2022-08-04,19.73,Books,4,False
+382,Customer_382,28.0,42681.33,San Diego,2021-10-04,159.71,Clothing,3,False
+383,Customer_383,10.0,,Houston,2021-09-28,113.18,Home,5,False
+384,Customer_384,29.0,40914.28,Philadelphia,2022-12-20,,Books,5,False
+385,Customer_385,26.0,61131.43,New York,2022-04-08,64.45,Electronics,5,False
+386,Customer_386,37.0,54489.39,New York,2021-04-29,255.66,Sports,2,False
+387,Customer_387,39.0,69526.12,,2022-02-13,7.55,Clothing,3,False
+388,Customer_388,58.0,73422.67,Los Angeles,2021-03-02,32.93,Sports,2,False
+389,Customer_389,,,Houston,2020-09-07,43.07,Books,4,False
+390,Customer_390,28.0,38698.73,San Antonio,2021-10-15,152.52,Electronics,2,False
+391,Customer_391,24.0,56899.58,Los Angeles,2022-10-13,489.48,Home,4,False
+392,Customer_392,,39834.27,New York,2022-10-14,27.53,Sports,4,True
+393,Customer_393,19.0,80200.81,Los Angeles,2021-01-09,207.39,Home,4,True
+394,Customer_394,57.0,52048.03,New York,2021-07-31,177.56,Electronics,2,False
+395,Customer_395,49.0,44520.18,Los Angeles,2020-08-19,25.45,Sports,3,False
+396,Customer_396,29.0,52770.2,Chicago,2022-12-26,50.97,Home,2,False
+397,Customer_397,14.0,29793.11,Phoenix,2022-12-10,52.71,Home,3,True
+398,Customer_398,51.0,35425.79,Chicago,2021-12-12,382.68,Sports,3,True
+399,Customer_399,34.0,68006.21,Chicago,2022-05-30,19.95,Electronics,4,True
+400,Customer_400,50.0,40146.59,Phoenix,2022-02-22,160.52,Home,2,False
+401,Customer_401,,34296.34,Phoenix,2021-10-11,40.68,Books,3,False
+402,Customer_402,28.0,58049.79,San Diego,2020-02-28,131.26,Sports,5,False
+403,Customer_403,35.0,67785.56,San Diego,2021-05-12,54.47,Clothing,3,False
+404,Customer_404,,60784.3,Houston,2022-01-08,86.36,Clothing,5,True
+405,Customer_405,30.0,64940.72,San Antonio,2022-01-11,178.74,Electronics,2,False
+406,Customer_406,42.0,38648.07,San Antonio,2021-02-12,163.05,Books,2,True
+407,Customer_407,22.0,28672.84,Houston,2022-10-28,201.31,Home,2,True
+408,Customer_408,33.0,,Chicago,2020-07-02,6.15,Clothing,3,False
+409,Customer_409,36.0,45159.8,Chicago,2021-07-01,117.78,Electronics,1,True
+410,Customer_410,41.0,46237.5,New York,2022-01-26,15.08,Books,3,True
+411,Customer_411,,69922.91,New York,2022-02-02,53.75,Books,3,True
+412,Customer_412,22.0,58343.45,San Antonio,2021-12-11,79.54,Electronics,4,True
+413,Customer_413,17.0,56838.32,Houston,2020-10-28,51.54,Electronics,4,False
+414,Customer_414,50.0,82475.04,Philadelphia,2020-06-20,73.32,Home,3,False
+415,Customer_415,39.0,40347.23,San Diego,2021-11-27,566.25,Electronics,5,True
+416,Customer_416,26.0,63917.6,Philadelphia,2021-10-18,14.53,Home,4,False
+417,Customer_417,54.0,50855.2,Houston,2020-07-15,112.53,Home,3,True
+418,Customer_418,36.0,54028.88,New York,2022-02-11,50.42,Sports,1,False
+419,Customer_419,49.0,,San Antonio,2021-05-13,14.27,Books,5,False
+420,Customer_420,36.0,57617.54,San Antonio,2022-01-01,17.29,Books,2,False
+421,Customer_421,60.0,58074.44,New York,2022-07-05,298.13,Books,3,False
+422,Customer_422,,66087.61,Philadelphia,2020-07-04,211.69,Sports,3,False
+423,Customer_423,32.0,44525.71,Los Angeles,2020-01-21,237.56,Home,5,True
+424,Customer_424,47.0,37411.85,Los Angeles,2022-05-03,477.16,Home,4,False
+425,Customer_425,,34327.86,New York,2021-10-29,23.36,Electronics,4,True
+426,Customer_426,,20504.65,Los Angeles,2022-02-05,43.92,Sports,4,True
+427,Customer_427,23.0,80843.11,Phoenix,2022-07-06,110.63,Electronics,2,False
+428,Customer_428,43.0,33451.87,Houston,2022-05-29,66.13,Sports,5,True
+429,Customer_429,,46681.2,Houston,2022-11-18,54.2,Electronics,5,False
+430,Customer_430,,45847.8,New York,2021-08-09,44.29,Clothing,4,True
+431,Customer_431,21.0,54611.1,Chicago,2021-06-18,90.09,Books,4,True
+432,Customer_432,11.0,62236.06,San Diego,2021-03-16,85.71,Books,1,False
+433,Customer_433,32.0,62907.1,Philadelphia,2020-06-17,17.61,Home,1,False
+434,Customer_434,44.0,41253.84,New York,2021-09-19,63.82,Clothing,3,False
+435,Customer_435,,47493.17,Los Angeles,2020-10-30,80.63,Books,3,False
+436,Customer_436,36.0,54238.7,Philadelphia,2022-10-05,84.46,Home,5,True
+437,Customer_437,55.0,46269.63,Chicago,2021-09-30,23.59,Clothing,5,False
+438,Customer_438,18.0,74110.18,Los Angeles,2021-10-11,135.58,Books,2,True
+439,Customer_439,,57364.62,San Antonio,2021-01-23,2.55,Electronics,2,True
+440,Customer_440,34.0,61023.17,San Diego,2020-02-26,43.82,Sports,1,True
+441,Customer_441,40.0,59943.22,Phoenix,2020-02-04,151.51,Clothing,3,True
+442,Customer_442,35.0,67602.11,Los Angeles,2021-04-08,82.99,Home,1,True
+443,Customer_443,10.0,52715.32,Phoenix,2020-04-02,,Clothing,1,True
+444,Customer_444,34.0,30547.52,Philadelphia,2021-10-26,118.73,Home,3,False
+445,Customer_445,,55995.32,Phoenix,2022-08-22,83.79,Clothing,2,True
+446,Customer_446,43.0,40229.65,Philadelphia,2022-08-24,159.08,Home,3,True
+447,Customer_447,,42070.75,Philadelphia,2021-12-22,132.81,Books,4,True
+448,Customer_448,24.0,58795.46,Philadelphia,2020-08-19,94.19,Electronics,4,False
+449,Customer_449,29.0,68574.25,Philadelphia,2022-08-02,66.98,Books,4,False
+450,Customer_450,,50319.07,Philadelphia,2022-08-28,14.29,Electronics,5,True
+451,Customer_451,34.0,54632.5,Los Angeles,2020-08-03,30.29,Books,2,False
+452,Customer_452,46.0,75533.22,,2022-03-18,54.32,Books,2,True
+453,Customer_453,23.0,53611.3,Los Angeles,2020-11-09,91.45,Clothing,5,False
+454,Customer_454,,89025.25,Philadelphia,2022-05-28,72.09,Sports,1,True
+455,Customer_455,,58482.64,Phoenix,2022-12-27,33.99,Home,4,False
+456,Customer_456,25.0,23588.56,San Antonio,2020-02-02,0.65,Home,4,False
+457,Customer_457,,61300.12,Philadelphia,2022-09-09,68.57,Home,1,False
+458,Customer_458,23.0,55717.38,Chicago,2021-11-12,33.63,Electronics,3,True
+459,Customer_459,28.0,,Philadelphia,2022-12-01,132.65,Home,3,True
+460,Customer_460,,60097.72,Philadelphia,2021-05-24,2.42,Home,2,True
+461,Customer_461,59.0,47923.16,Phoenix,2022-07-16,87.91,Clothing,5,False
+462,Customer_462,35.0,31635.53,San Diego,2020-03-09,283.83,Books,2,False
+463,Customer_463,27.0,46864.65,Houston,2021-01-02,19.17,Home,3,True
+464,Customer_464,38.0,37242.19,Phoenix,2020-03-14,63.8,Sports,1,False
+465,Customer_465,34.0,41292.15,Chicago,2022-12-04,9.59,Home,2,True
+466,Customer_466,32.0,58828.68,Houston,2022-06-13,98.26,Electronics,4,True
+467,Customer_467,42.0,75048.57,New York,2022-07-22,79.97,Electronics,4,True
+468,Customer_468,44.0,55920.07,New York,2022-10-24,52.32,Electronics,1,True
+469,Customer_469,29.0,32061.75,San Diego,2020-04-03,73.68,Home,3,False
+470,Customer_470,28.0,56669.04,Chicago,2021-02-26,226.89,Clothing,4,False
+471,Customer_471,32.0,67949.47,Phoenix,2020-03-18,21.85,Sports,4,False
+472,Customer_472,7.0,40853.26,Los Angeles,2020-08-18,2.28,Home,5,True
+473,Customer_473,17.0,47989.74,Chicago,2020-09-08,197.81,Clothing,2,False
+474,Customer_474,51.0,50220.32,San Antonio,2021-05-28,86.07,Clothing,3,True
+475,Customer_475,55.0,38226.53,Houston,2020-10-21,221.33,Home,2,True
+476,Customer_476,32.0,59724.21,Houston,2020-04-20,90.87,Home,3,True
+477,Customer_477,,48185.78,Philadelphia,2020-07-02,166.16,Clothing,4,True
+478,Customer_478,,56292.99,New York,2020-06-10,56.15,Clothing,5,True
+479,Customer_479,72.0,,San Diego,2022-12-01,138.57,Clothing,2,True
+480,Customer_480,48.0,43438.13,Houston,2022-04-11,244.23,Home,4,False
+481,Customer_481,33.0,60835.72,Chicago,2022-11-25,84.89,Clothing,3,False
+482,Customer_482,24.0,44407.5,Houston,2021-04-26,19.94,Electronics,2,False
+483,Customer_483,16.0,75904.46,San Diego,2020-10-31,,Home,2,False
+484,Customer_484,37.0,44005.46,San Diego,2022-05-24,22.15,Electronics,4,True
+485,Customer_485,26.0,53370.27,San Diego,2020-12-23,28.35,Books,2,True
+486,Customer_486,18.0,63988.86,Chicago,2020-11-23,36.59,Home,5,False
+487,Customer_487,27.0,28724.51,Los Angeles,2020-09-11,81.0,Books,5,False
+488,Customer_488,22.0,23587.87,Philadelphia,2020-05-21,88.67,Clothing,4,False
+489,Customer_489,55.0,,New York,2020-10-07,55.6,Clothing,3,False
+490,Customer_490,46.0,68938.76,Houston,2021-01-24,95.56,Sports,4,False
+491,Customer_491,,41722.13,Chicago,2022-01-08,8.51,Clothing,5,False
+492,Customer_492,53.0,88372.99,Phoenix,2020-03-09,9.19,Books,1,False
+493,Customer_493,36.0,41536.29,New York,2020-08-18,18.85,Clothing,1,False
+494,Customer_494,25.0,52768.27,Los Angeles,2022-06-04,73.0,Home,2,True
+495,Customer_495,,73131.65,Chicago,2020-06-09,24.08,Clothing,2,True
+496,Customer_496,,80091.39,San Antonio,2021-01-10,,Sports,1,True
+497,Customer_497,23.0,80922.55,San Antonio,2022-08-04,51.13,Clothing,5,True
+498,Customer_498,33.0,68125.49,Philadelphia,2020-06-18,167.06,Books,2,False
+499,Customer_499,24.0,65360.94,Philadelphia,2020-03-31,1.4,Books,4,True
+500,Customer_500,18.0,58887.9,Los Angeles,2021-06-14,104.8,Clothing,4,False
+501,Customer_501,46.0,61675.42,Los Angeles,2020-11-27,110.53,Books,5,True
+502,Customer_502,58.0,41732.21,Philadelphia,2021-09-08,160.27,Books,2,False
+503,Customer_503,18.0,37727.02,Houston,2022-05-30,269.94,Sports,4,False
+504,Customer_504,42.0,,Houston,2020-05-30,2.03,Home,2,True
+505,Customer_505,27.0,47447.23,Chicago,2021-09-27,16.7,Sports,2,True
+506,Customer_506,29.0,43201.58,Phoenix,2021-07-07,217.31,Electronics,4,False
+507,Customer_507,28.0,60445.81,Chicago,2020-06-06,61.34,Sports,1,False
+508,Customer_508,25.0,64329.58,,2021-11-14,83.15,Clothing,4,False
+509,Customer_509,,51326.1,Los Angeles,2020-10-26,108.78,Home,5,True
+510,Customer_510,25.0,72162.95,New York,2021-06-18,113.65,Clothing,3,True
+511,Customer_511,38.0,32874.66,Chicago,2020-03-31,268.44,Electronics,4,False
+512,Customer_512,34.0,47095.11,Chicago,2021-05-18,579.24,Home,2,True
+513,Customer_513,32.0,39247.67,Phoenix,2020-12-01,127.35,Books,2,False
+514,Customer_514,24.0,22001.95,San Diego,2022-06-19,33.86,Sports,4,True
+515,Customer_515,28.0,48759.79,Los Angeles,2020-03-03,211.82,Clothing,3,True
+516,Customer_516,44.0,48173.79,Los Angeles,2021-04-03,5.05,Electronics,4,True
+517,Customer_517,41.0,72701.75,San Antonio,2021-05-16,26.28,Books,3,True
+518,Customer_518,23.0,59462.18,San Diego,2022-03-04,227.68,Sports,3,True
+519,Customer_519,36.0,,Phoenix,2021-09-20,29.6,Books,5,False
+520,Customer_520,44.0,77811.39,Los Angeles,2021-12-31,24.93,Sports,2,False
+521,Customer_521,15.0,68315.51,San Diego,2022-04-30,14.86,Home,2,True
+522,Customer_522,42.0,58731.47,Philadelphia,2022-08-02,195.98,Books,3,False
+523,Customer_523,27.0,46602.74,San Diego,2020-12-09,69.33,Books,2,False
+524,Customer_524,42.0,35608.41,Houston,2021-08-12,112.36,Books,1,True
+525,Customer_525,26.0,44416.9,San Antonio,2022-07-08,27.32,Home,3,False
+526,Customer_526,,66331.23,Philadelphia,2022-12-19,141.9,Electronics,2,True
+527,Customer_527,15.0,78268.79,New York,2022-09-01,142.71,Sports,1,False
+528,Customer_528,,73148.65,Chicago,2021-02-10,37.48,Books,5,False
+529,Customer_529,,42667.26,San Antonio,2020-08-01,52.88,Home,2,False
+530,Customer_530,,33205.74,New York,2021-06-19,,Electronics,1,False
+531,Customer_531,43.0,52113.29,Chicago,2022-03-23,375.34,Sports,4,False
+532,Customer_532,15.0,23473.41,Houston,2021-06-23,103.73,Home,4,False
+533,Customer_533,34.0,54847.52,San Diego,2021-06-13,272.64,Sports,1,False
+534,Customer_534,20.0,,Los Angeles,2022-07-06,36.15,Books,3,True
+535,Customer_535,27.0,43009.45,Philadelphia,2021-01-30,152.28,Electronics,3,True
+536,Customer_536,36.0,26079.45,Phoenix,2022-07-30,145.18,Home,2,True
+537,Customer_537,,,Philadelphia,2021-03-21,117.65,Electronics,4,True
+538,Customer_538,30.0,42009.49,Houston,2020-12-25,337.08,Books,3,False
+539,Customer_539,47.0,32451.25,New York,2021-05-12,50.01,Electronics,3,False
+540,Customer_540,,,Phoenix,2022-04-14,14.01,Electronics,4,False
+541,Customer_541,45.0,49587.28,Los Angeles,2020-05-17,111.39,Clothing,5,True
+542,Customer_542,21.0,76583.77,Houston,2020-08-03,130.68,Electronics,3,True
+543,Customer_543,41.0,74918.89,Phoenix,2022-11-07,85.58,Sports,1,True
+544,Customer_544,52.0,43143.56,Houston,2020-07-11,23.17,Home,2,False
+545,Customer_545,5.0,40966.82,San Diego,2021-09-13,70.21,Clothing,3,True
+546,Customer_546,25.0,57031.61,Houston,2021-09-26,37.42,Home,3,False
+547,Customer_547,42.0,35024.22,Los Angeles,2021-06-20,55.77,Home,5,True
+548,Customer_548,33.0,,San Antonio,2021-12-06,103.63,Books,1,False
+549,Customer_549,39.0,,Chicago,2020-09-08,136.73,Books,2,True
+550,Customer_550,28.0,68404.0,Phoenix,2021-08-28,26.43,Clothing,3,False
+551,Customer_551,36.0,48497.69,San Diego,2021-02-11,51.97,Books,2,True
+552,Customer_552,33.0,46944.89,Los Angeles,2021-12-25,31.36,Books,4,True
+553,Customer_553,49.0,36830.26,Houston,2020-06-03,22.14,Books,3,False
+554,Customer_554,38.0,,San Diego,2021-09-17,152.96,Home,3,False
+555,Customer_555,39.0,46602.82,Los Angeles,2020-07-21,239.97,Clothing,4,True
+556,Customer_556,30.0,55510.48,San Antonio,2020-11-01,46.24,Home,5,False
+557,Customer_557,29.0,63703.77,San Diego,2020-08-27,139.14,Sports,3,True
+558,Customer_558,30.0,37952.32,San Diego,2020-07-19,227.3,Home,2,False
+559,Customer_559,40.0,72390.33,Chicago,2022-06-23,187.16,Sports,1,True
+560,Customer_560,30.0,45933.15,Philadelphia,2020-11-08,20.19,Electronics,2,False
+561,Customer_561,38.0,49679.49,Phoenix,2022-10-12,313.02,Electronics,5,True
+562,Customer_562,60.0,38791.82,Chicago,2022-11-28,47.27,Sports,1,True
+563,Customer_563,45.0,13636.4,New York,2021-09-17,41.44,Sports,2,True
+564,Customer_564,31.0,,Phoenix,2020-06-05,6.45,Home,2,False
+565,Customer_565,49.0,61052.66,Chicago,2021-02-14,66.59,Sports,4,True
+566,Customer_566,30.0,,Houston,2022-05-23,11.54,Clothing,5,False
+567,Customer_567,11.0,51004.86,Phoenix,2021-02-06,28.57,Electronics,4,False
+568,Customer_568,23.0,57739.09,Phoenix,2020-04-05,38.12,Electronics,1,False
+569,Customer_569,13.0,26561.81,Los Angeles,2021-09-01,165.46,Sports,4,True
+570,Customer_570,31.0,42064.21,Houston,2022-07-14,208.34,Books,5,False
+571,Customer_571,35.0,61913.97,New York,2022-05-21,36.02,Books,3,False
+572,Customer_572,55.0,,Philadelphia,2020-07-10,195.69,Sports,3,False
+573,Customer_573,39.0,54403.37,San Diego,2022-01-06,194.65,Clothing,1,True
+574,Customer_574,32.0,29651.27,San Antonio,2020-08-29,144.67,Books,3,False
+575,Customer_575,,56996.45,Chicago,2020-08-26,15.86,Sports,4,False
+576,Customer_576,,49465.38,Los Angeles,2022-08-15,117.22,Clothing,1,False
+577,Customer_577,38.0,,Chicago,2020-09-30,290.09,Clothing,5,False
+578,Customer_578,44.0,67471.09,New York,2020-10-15,114.74,Home,1,True
+579,Customer_579,17.0,38981.13,San Diego,2020-01-01,40.29,Clothing,1,True
+580,Customer_580,49.0,37846.21,New York,2022-08-11,69.43,Books,2,False
+581,Customer_581,39.0,,Phoenix,2022-05-17,103.77,Books,2,False
+582,Customer_582,30.0,67229.56,San Antonio,2021-11-17,71.45,Sports,1,False
+583,Customer_583,43.0,34762.67,,2022-04-01,12.78,Sports,3,False
+584,Customer_584,,50925.2,Chicago,2020-06-15,37.41,Clothing,2,True
+585,Customer_585,37.0,,Houston,2021-05-16,162.15,Electronics,5,True
+586,Customer_586,38.0,60396.58,Houston,2021-01-19,197.63,Home,4,True
+587,Customer_587,,52646.62,Phoenix,2020-04-12,14.77,Electronics,2,True
+588,Customer_588,25.0,44494.58,Philadelphia,2021-06-16,304.46,Clothing,1,False
+589,Customer_589,,37586.15,Chicago,2022-10-05,39.87,Clothing,3,False
+590,Customer_590,25.0,51292.16,Chicago,2020-02-13,108.56,Electronics,4,True
+591,Customer_591,36.0,33917.91,New York,2020-11-15,139.36,Home,2,True
+592,Customer_592,29.0,6179.74,San Antonio,2020-08-15,167.1,Electronics,3,False
+593,Customer_593,41.0,56548.4,Chicago,2020-09-17,291.41,Sports,3,False
+594,Customer_594,39.0,63559.02,Los Angeles,2022-09-21,37.53,Books,3,False
+595,Customer_595,47.0,14556.01,Philadelphia,2021-05-27,195.55,Sports,1,False
+596,Customer_596,29.0,34854.04,New York,2021-05-25,14.12,Books,5,False
+597,Customer_597,32.0,59287.31,Los Angeles,2022-04-12,122.09,Clothing,3,True
+598,Customer_598,23.0,80862.43,Phoenix,2020-06-18,135.47,Home,4,True
+599,Customer_599,30.0,,Houston,2021-06-17,113.23,Electronics,2,False
+600,Customer_600,,39079.96,Phoenix,2021-04-15,29.08,Home,4,False
+601,Customer_601,44.0,47256.55,Houston,2021-10-15,206.39,Electronics,1,True
+602,Customer_602,24.0,70623.15,Phoenix,2022-12-30,18.5,Sports,1,False
+603,Customer_603,,40310.54,Chicago,2022-04-22,5.51,Sports,4,True
+604,Customer_604,51.0,38012.12,Los Angeles,2021-03-11,126.4,Electronics,5,True
+605,Customer_605,40.0,42758.85,Houston,2022-06-25,64.53,Home,1,True
+606,Customer_606,58.0,35700.07,New York,2020-07-05,189.11,Electronics,1,True
+607,Customer_607,,51840.05,,2020-02-03,,Clothing,4,False
+608,Customer_608,20.0,74370.18,New York,2020-08-11,18.43,Sports,1,False
+609,Customer_609,14.0,54846.19,Los Angeles,2021-01-07,181.06,Clothing,5,True
+610,Customer_610,53.0,46214.7,Los Angeles,2021-07-13,79.61,Sports,5,False
+611,Customer_611,43.0,45622.83,Phoenix,2021-11-04,20.97,Sports,5,False
+612,Customer_612,34.0,,Houston,2022-09-24,127.43,Books,2,False
+613,Customer_613,38.0,63246.65,Houston,2021-07-12,71.56,Clothing,5,False
+614,Customer_614,21.0,48832.44,San Antonio,2021-07-02,92.71,Clothing,5,True
+615,Customer_615,64.0,47292.8,Los Angeles,2020-02-25,61.79,Books,2,False
+616,Customer_616,37.0,,Chicago,2020-02-08,176.44,Home,3,True
+617,Customer_617,36.0,54481.29,Chicago,2021-08-26,176.94,Clothing,1,True
+618,Customer_618,44.0,38723.13,New York,2021-04-24,,Electronics,5,False
+619,Customer_619,41.0,43604.64,New York,2022-07-07,11.14,Books,1,True
+620,Customer_620,38.0,67226.69,Phoenix,2020-06-24,182.54,Clothing,4,False
+621,Customer_621,26.0,51699.06,Los Angeles,2020-01-28,111.17,Home,1,False
+622,Customer_622,41.0,28425.83,New York,2021-05-06,119.41,Clothing,2,True
+623,Customer_623,58.0,63788.43,New York,2020-09-17,45.1,Sports,1,False
+624,Customer_624,51.0,39977.84,Philadelphia,2020-02-24,211.43,Electronics,1,True
+625,Customer_625,54.0,,Los Angeles,2022-03-04,129.23,Books,1,True
+626,Customer_626,29.0,66200.72,San Diego,2020-05-02,11.94,Sports,3,False
+627,Customer_627,,43290.17,Phoenix,2021-10-28,52.39,Home,3,False
+628,Customer_628,,69215.25,New York,2020-11-03,217.49,Sports,4,False
+629,Customer_629,,51017.83,Phoenix,2020-07-08,4.83,Sports,2,True
+630,Customer_630,48.0,62791.61,Houston,2021-02-19,,Home,1,False
+631,Customer_631,15.0,57270.99,Phoenix,2022-05-27,113.68,Sports,1,True
+632,Customer_632,,37304.65,San Diego,2021-03-05,99.8,Books,1,True
+633,Customer_633,,,Chicago,2022-04-02,31.55,Clothing,1,False
+634,Customer_634,,,San Diego,2020-05-17,28.61,Sports,3,False
+635,Customer_635,23.0,44978.37,Chicago,2022-04-26,284.83,Books,4,False
+636,Customer_636,15.0,43945.27,Phoenix,2020-09-16,35.42,Clothing,5,True
+637,Customer_637,45.0,35673.16,Chicago,2022-01-11,149.39,Clothing,2,False
+638,Customer_638,36.0,56353.99,Houston,2021-09-11,49.94,Sports,1,True
+639,Customer_639,20.0,80937.87,Los Angeles,2022-10-14,15.0,Books,4,False
+640,Customer_640,19.0,33987.01,Chicago,2021-02-28,,Sports,5,False
+641,Customer_641,,50363.29,Chicago,2020-03-13,78.58,Home,4,True
+642,Customer_642,55.0,71183.31,Phoenix,2020-01-21,372.05,Clothing,3,True
+643,Customer_643,32.0,48805.38,Houston,2022-06-24,46.07,Sports,5,False
+644,Customer_644,17.0,56785.58,San Antonio,2021-07-28,44.19,Clothing,4,False
+645,Customer_645,32.0,34064.1,San Antonio,2022-04-28,42.17,Books,3,False
+646,Customer_646,32.0,56424.61,San Antonio,2020-09-13,73.51,Electronics,4,False
+647,Customer_647,3.0,47192.84,San Antonio,2021-01-12,58.1,Sports,4,False
+648,Customer_648,,64785.95,Los Angeles,2020-02-02,211.96,Sports,5,True
+649,Customer_649,32.0,67810.79,San Diego,2022-11-18,70.43,Clothing,3,True
+650,Customer_650,43.0,88843.45,Phoenix,2022-01-01,70.88,Books,1,True
+651,Customer_651,57.0,58694.5,Phoenix,2022-10-18,14.89,Home,2,True
+652,Customer_652,49.0,54886.94,Philadelphia,2020-10-17,405.93,Books,5,False
+653,Customer_653,32.0,52915.76,Houston,2021-10-31,28.76,Sports,3,True
+654,Customer_654,22.0,44702.51,San Antonio,2022-01-12,7.62,Home,4,True
+655,Customer_655,,55077.26,Los Angeles,2020-12-13,108.81,Books,3,True
+656,Customer_656,36.0,45568.98,Houston,2022-07-17,90.48,Electronics,2,False
+657,Customer_657,35.0,52526.91,San Antonio,2022-11-03,53.64,Clothing,2,True
+658,Customer_658,35.0,69763.96,Los Angeles,2022-08-26,54.85,Books,1,False
+659,Customer_659,37.0,34901.86,Houston,2022-03-20,,Books,1,True
+660,Customer_660,33.0,67098.18,Phoenix,2020-10-30,21.78,Electronics,2,False
+661,Customer_661,,69756.73,Phoenix,2020-11-04,171.62,Sports,5,True
+662,Customer_662,28.0,48228.97,San Diego,2022-11-20,104.62,Clothing,5,False
+663,Customer_663,35.0,18172.18,New York,2020-01-12,54.3,Books,4,True
+664,Customer_664,28.0,40882.67,San Diego,2022-02-23,61.25,Home,1,False
+665,Customer_665,26.0,69454.92,Chicago,2022-02-12,29.66,Books,4,False
+666,Customer_666,36.0,49656.98,San Diego,2021-11-12,139.48,Clothing,1,True
+667,Customer_667,32.0,35010.47,San Antonio,2022-12-20,71.92,Books,2,False
+668,Customer_668,53.0,42428.38,Philadelphia,2020-12-07,38.69,Electronics,5,False
+669,Customer_669,,62609.3,Houston,2021-01-07,90.65,Books,5,True
+670,Customer_670,48.0,58201.0,Philadelphia,2020-03-27,545.72,Books,2,True
+671,Customer_671,50.0,46416.02,New York,2021-04-29,57.14,Home,4,False
+672,Customer_672,10.0,44497.63,Chicago,2020-10-12,253.44,Electronics,4,True
+673,Customer_673,31.0,44123.63,,2021-01-11,42.31,Electronics,3,True
+674,Customer_674,,36163.85,Los Angeles,2022-07-02,5.63,Books,1,True
+675,Customer_675,,74230.64,San Antonio,2022-10-21,22.85,Home,4,False
+676,Customer_676,26.0,45165.19,Chicago,2020-07-22,54.25,Books,2,False
+677,Customer_677,22.0,68257.38,Phoenix,2021-02-11,24.8,Books,4,False
+678,Customer_678,56.0,,,2022-10-13,0.02,Clothing,5,False
+679,Customer_679,46.0,64974.66,Chicago,2020-03-08,246.51,Clothing,1,False
+680,Customer_680,50.0,43525.7,San Antonio,2020-04-11,185.71,Home,3,False
+681,Customer_681,44.0,56055.95,San Diego,2020-06-27,135.59,Sports,1,False
+682,Customer_682,21.0,49637.07,Chicago,2021-10-13,18.37,Clothing,5,True
+683,Customer_683,,36444.47,San Diego,2020-06-13,12.82,Sports,5,False
+684,Customer_684,41.0,54865.39,San Antonio,2022-11-26,7.0,Electronics,5,False
+685,Customer_685,20.0,32314.4,Phoenix,2021-05-04,128.75,Clothing,5,True
+686,Customer_686,44.0,67815.19,Houston,2021-07-03,264.24,Clothing,2,True
+687,Customer_687,32.0,43030.74,Los Angeles,2020-09-27,56.31,Home,3,True
+688,Customer_688,,53017.39,Phoenix,2021-05-30,12.69,Sports,5,False
+689,Customer_689,44.0,54249.32,San Diego,2021-12-25,71.82,Clothing,5,True
+690,Customer_690,40.0,46116.43,San Diego,2022-04-02,42.9,Clothing,4,False
+691,Customer_691,31.0,,Los Angeles,2022-04-05,46.97,Home,3,False
+692,Customer_692,49.0,42876.45,Houston,2021-09-24,97.11,Home,1,False
+693,Customer_693,22.0,63069.46,Chicago,2022-09-17,126.84,Sports,3,True
+694,Customer_694,42.0,29810.3,Los Angeles,2022-06-14,11.72,Electronics,3,True
+695,Customer_695,,51895.69,New York,2022-04-08,3.62,Electronics,3,False
+696,Customer_696,31.0,79083.93,New York,2020-03-01,517.26,Books,5,False
+697,Customer_697,,34995.03,San Antonio,2020-01-08,26.49,Clothing,5,False
+698,Customer_698,20.0,39833.83,Phoenix,2020-08-20,5.53,Sports,2,True
+699,Customer_699,46.0,57708.62,San Diego,2021-12-27,21.06,Clothing,1,False
+700,Customer_700,,52693.73,Houston,2021-03-26,3.97,Sports,4,True
+701,Customer_701,29.0,,San Antonio,2021-03-16,49.73,Sports,3,False
+702,Customer_702,48.0,57337.81,Phoenix,2022-08-26,162.15,Sports,1,True
+703,Customer_703,,59520.82,Phoenix,2022-09-07,41.74,Clothing,1,False
+704,Customer_704,18.0,66645.5,San Antonio,2022-09-22,58.73,Home,2,True
+705,Customer_705,,56147.28,Philadelphia,2020-12-09,112.57,Clothing,4,True
+706,Customer_706,42.0,46381.14,Phoenix,2022-01-26,71.11,Sports,3,True
+707,Customer_707,,60088.61,Philadelphia,2020-10-24,197.65,Books,4,True
+708,Customer_708,56.0,78498.23,New York,2020-07-27,201.02,Electronics,2,True
+709,Customer_709,10.0,48010.49,New York,2020-07-21,1.0,Sports,5,True
+710,Customer_710,55.0,35382.06,Phoenix,2021-01-09,150.53,Books,1,False
+711,Customer_711,38.0,66606.21,New York,2021-04-15,61.75,Home,3,False
+712,Customer_712,34.0,48194.28,Houston,2022-06-28,449.55,Sports,5,False
+713,Customer_713,28.0,17409.96,Philadelphia,2020-05-11,66.02,Books,2,False
+714,Customer_714,40.0,62711.33,Philadelphia,2022-03-15,433.48,Sports,4,True
+715,Customer_715,35.0,41970.08,Phoenix,2021-08-04,140.47,Clothing,1,False
+716,Customer_716,,48642.0,New York,2020-11-11,28.58,Books,3,True
+717,Customer_717,36.0,54979.7,Los Angeles,2021-06-23,77.3,Clothing,5,True
+718,Customer_718,37.0,52857.5,San Diego,2020-11-24,484.54,Clothing,5,True
+719,Customer_719,31.0,60641.78,San Antonio,2021-10-14,194.86,Books,1,False
+720,Customer_720,,43467.7,San Antonio,2021-04-20,10.24,Electronics,4,True
+721,Customer_721,39.0,57696.59,Philadelphia,2020-06-29,122.54,Books,2,False
+722,Customer_722,14.0,46106.8,Phoenix,2020-05-07,42.4,Electronics,4,False
+723,Customer_723,19.0,61082.16,Phoenix,2021-08-21,0.7,Sports,4,False
+724,Customer_724,44.0,59230.51,Houston,2022-09-15,51.66,Sports,4,False
+725,Customer_725,37.0,,Chicago,2021-01-11,26.76,Books,1,False
+726,Customer_726,33.0,66289.73,San Diego,2022-03-13,170.85,Sports,1,True
+727,Customer_727,35.0,41960.55,Chicago,2021-12-22,41.15,Home,2,True
+728,Customer_728,39.0,62120.87,Philadelphia,2022-10-17,175.75,Clothing,4,False
+729,Customer_729,29.0,55509.31,San Antonio,2022-06-17,0.06,Clothing,1,True
+730,Customer_730,26.0,77572.76,Houston,2021-09-12,36.79,Electronics,2,False
+731,Customer_731,37.0,46648.01,Houston,2021-12-20,,Sports,2,True
+732,Customer_732,23.0,44760.25,Houston,2022-09-10,26.6,Electronics,4,True
+733,Customer_733,40.0,49708.71,Philadelphia,2021-03-13,7.06,Clothing,3,True
+734,Customer_734,15.0,45452.3,,2020-12-23,20.72,Clothing,4,True
+735,Customer_735,47.0,61999.13,San Antonio,2020-01-12,81.09,Sports,3,True
+736,Customer_736,41.0,25755.34,Houston,2022-06-24,34.44,Home,2,True
+737,Customer_737,38.0,34194.76,San Antonio,2022-05-27,54.02,Home,1,True
+738,Customer_738,47.0,33982.96,New York,2020-04-24,47.3,Sports,5,True
+739,Customer_739,55.0,64254.61,Phoenix,2021-09-23,208.67,Sports,2,True
+740,Customer_740,47.0,,Phoenix,2021-05-23,235.7,Electronics,1,True
+741,Customer_741,13.0,48433.26,San Antonio,2020-05-09,,Sports,2,True
+742,Customer_742,20.0,47467.67,Los Angeles,2022-12-09,40.07,Home,4,True
+743,Customer_743,28.0,51050.78,Los Angeles,2020-08-23,11.29,Sports,3,True
+744,Customer_744,35.0,67428.17,Philadelphia,2020-03-14,306.62,Electronics,2,False
+745,Customer_745,41.0,36089.7,Philadelphia,2021-10-13,6.21,Electronics,1,True
+746,Customer_746,26.0,53575.53,Phoenix,2022-03-20,35.33,Electronics,4,True
+747,Customer_747,37.0,64627.96,New York,2020-02-05,35.39,Electronics,5,True
+748,Customer_748,26.0,57516.41,San Diego,2021-12-22,38.63,Books,4,True
+749,Customer_749,28.0,52843.72,Chicago,2021-08-05,17.95,Sports,3,True
+750,Customer_750,,65015.69,Chicago,2020-04-23,152.86,Clothing,4,True
+751,Customer_751,24.0,9451.52,Philadelphia,2020-07-07,13.07,Sports,5,False
+752,Customer_752,19.0,60168.13,New York,2021-09-13,100.76,Books,1,False
+753,Customer_753,23.0,40188.86,Philadelphia,2020-11-20,,Electronics,2,False
+754,Customer_754,48.0,22540.51,San Diego,2022-10-24,7.31,Books,3,True
+755,Customer_755,24.0,57668.04,Chicago,2022-06-15,,Home,5,True
+756,Customer_756,67.0,70604.88,,2022-12-13,21.09,Home,3,True
+757,Customer_757,41.0,47938.27,Philadelphia,2020-10-11,172.18,Sports,4,False
+758,Customer_758,37.0,64293.12,Houston,2022-11-27,78.66,Sports,3,True
+759,Customer_759,25.0,74184.17,San Antonio,2021-04-17,8.11,Clothing,5,True
+760,Customer_760,43.0,69723.72,San Diego,2021-01-15,311.11,Clothing,2,False
+761,Customer_761,28.0,74599.47,San Diego,2020-02-25,28.36,Home,2,False
+762,Customer_762,36.0,61131.91,Philadelphia,2020-02-27,196.36,Electronics,3,True
+763,Customer_763,66.0,51131.5,Phoenix,2022-01-27,18.49,Books,1,True
+764,Customer_764,34.0,25970.51,Philadelphia,2021-05-16,192.38,Clothing,3,True
+765,Customer_765,,46309.06,Phoenix,2020-09-05,,Clothing,4,True
+766,Customer_766,27.0,37351.3,San Diego,2021-11-03,71.7,Electronics,2,False
+767,Customer_767,35.0,82564.14,New York,2020-10-03,146.73,Electronics,2,True
+768,Customer_768,56.0,47361.71,San Diego,2021-09-24,273.02,Sports,2,True
+769,Customer_769,27.0,51848.07,Chicago,2021-01-28,239.91,Books,1,False
+770,Customer_770,57.0,58272.28,,2022-06-20,171.27,Electronics,1,True
+771,Customer_771,,50654.04,San Antonio,2022-06-17,219.1,Clothing,5,True
+772,Customer_772,28.0,75425.77,Los Angeles,2021-06-06,22.22,Clothing,3,False
+773,Customer_773,43.0,40660.26,Los Angeles,2021-01-19,33.43,Home,3,False
+774,Customer_774,47.0,52919.11,San Diego,2021-02-01,34.1,Electronics,4,True
+775,Customer_775,42.0,38862.94,Chicago,2022-06-01,47.33,Sports,2,False
+776,Customer_776,16.0,30199.66,Los Angeles,2020-12-25,49.98,Books,1,False
+777,Customer_777,26.0,,San Antonio,2020-08-16,,Sports,4,True
+778,Customer_778,32.0,49444.45,Philadelphia,2020-04-02,17.42,Clothing,4,False
+779,Customer_779,34.0,43560.47,New York,2021-05-26,117.52,Sports,1,True
+780,Customer_780,42.0,39613.69,New York,2021-06-11,18.34,Clothing,3,True
+781,Customer_781,37.0,28905.24,Chicago,2022-07-09,37.15,Clothing,2,True
+782,Customer_782,19.0,48753.42,San Diego,2020-08-30,,Clothing,3,True
+783,Customer_783,40.0,27429.19,Los Angeles,2021-02-21,159.18,Clothing,4,False
+784,Customer_784,,61400.84,Philadelphia,2022-06-04,134.5,Clothing,2,True
+785,Customer_785,42.0,51236.6,,2022-06-20,103.71,Home,5,True
+786,Customer_786,48.0,28136.73,New York,2021-02-25,16.93,Sports,4,True
+787,Customer_787,45.0,45361.86,Houston,2021-05-17,79.2,Home,3,True
+788,Customer_788,41.0,38717.65,San Diego,2020-11-28,9.15,Home,3,False
+789,Customer_789,34.0,54787.62,Houston,2022-10-18,47.38,Electronics,3,False
+790,Customer_790,,70106.76,San Antonio,2020-05-09,53.36,Electronics,1,False
+791,Customer_791,40.0,21872.41,New York,2022-10-19,4.06,Electronics,4,True
+792,Customer_792,37.0,51725.39,Chicago,2022-01-18,32.02,Books,2,False
+793,Customer_793,38.0,47598.01,Phoenix,2021-08-05,311.56,Electronics,3,False
+794,Customer_794,20.0,60070.1,Phoenix,2020-02-05,307.12,Sports,3,True
+795,Customer_795,22.0,53197.95,Philadelphia,2021-06-04,43.44,Home,1,False
+796,Customer_796,48.0,38720.46,New York,2021-03-22,4.41,Sports,2,True
+797,Customer_797,35.0,45214.19,New York,2020-06-25,19.73,Electronics,4,False
+798,Customer_798,43.0,38059.61,San Antonio,2021-12-19,49.79,Books,5,False
+799,Customer_799,35.0,66140.11,New York,2022-11-29,295.23,Books,1,False
+800,Customer_800,35.0,50319.67,Chicago,2021-09-07,15.22,Home,4,False
+801,Customer_801,46.0,78517.86,,2022-02-21,144.19,Sports,5,True
+802,Customer_802,29.0,49090.09,New York,2020-03-15,11.51,Clothing,3,True
+803,Customer_803,36.0,39373.9,New York,2021-04-02,397.7,Sports,3,False
+804,Customer_804,29.0,27294.28,San Antonio,2020-05-07,48.06,Electronics,2,True
+805,Customer_805,30.0,22952.9,San Diego,2021-11-02,149.27,Clothing,5,False
+806,Customer_806,31.0,26237.96,,2022-10-24,41.94,Books,3,False
+807,Customer_807,38.0,54006.9,San Diego,2021-12-25,98.8,Home,3,False
+808,Customer_808,,57630.88,San Antonio,2020-03-25,21.32,Home,2,False
+809,Customer_809,50.0,26282.14,San Diego,2021-01-23,15.78,Books,4,False
+810,Customer_810,24.0,63425.57,San Antonio,2021-08-25,278.17,Electronics,3,False
+811,Customer_811,33.0,,Chicago,2021-03-17,249.67,Books,1,True
+812,Customer_812,30.0,52201.9,Philadelphia,2022-07-01,218.45,Electronics,1,True
+813,Customer_813,52.0,74183.31,New York,2022-06-11,98.2,Clothing,4,False
+814,Customer_814,,63452.59,San Antonio,2021-10-31,165.17,Books,5,True
+815,Customer_815,47.0,45972.04,San Antonio,2021-02-12,,Electronics,2,False
+816,Customer_816,17.0,36632.12,Los Angeles,2020-10-06,40.77,Clothing,1,True
+817,Customer_817,38.0,17722.77,San Antonio,2020-04-25,37.64,Books,1,True
+818,Customer_818,46.0,39212.7,Phoenix,2021-01-23,100.96,Home,4,True
+819,Customer_819,36.0,46833.05,Philadelphia,2021-03-28,44.0,Books,5,False
+820,Customer_820,48.0,35192.31,New York,2022-01-10,16.08,Sports,5,True
+821,Customer_821,29.0,48031.15,New York,2021-12-21,90.75,Books,4,False
+822,Customer_822,52.0,,Los Angeles,2020-03-17,168.41,Sports,1,False
+823,Customer_823,63.0,46627.16,Chicago,2021-03-08,48.15,Clothing,2,False
+824,Customer_824,31.0,40249.96,New York,2020-07-18,14.19,Books,1,True
+825,Customer_825,30.0,52529.82,Phoenix,2020-06-20,21.9,Clothing,5,True
+826,Customer_826,52.0,56629.11,New York,2022-06-24,27.11,Clothing,1,True
+827,Customer_827,54.0,,Phoenix,2020-02-15,35.65,Electronics,2,False
+828,Customer_828,29.0,,Philadelphia,2021-04-04,102.94,Clothing,3,False
+829,Customer_829,30.0,48521.18,Philadelphia,2020-07-03,91.87,Clothing,1,True
+830,Customer_830,32.0,50282.74,,2022-08-20,119.1,Books,4,False
+831,Customer_831,19.0,60623.22,Houston,2021-09-01,45.02,Books,3,True
+832,Customer_832,24.0,53498.24,Phoenix,2020-09-10,173.73,Home,4,True
+833,Customer_833,,,Chicago,2021-07-04,22.83,Electronics,4,True
+834,Customer_834,26.0,54306.86,New York,2022-03-11,63.31,Clothing,4,True
+835,Customer_835,35.0,40813.44,San Antonio,2022-11-15,161.41,Electronics,1,False
+836,Customer_836,38.0,55422.55,New York,2020-08-29,19.86,Sports,5,True
+837,Customer_837,54.0,32844.11,Houston,2022-08-28,11.64,Clothing,3,True
+838,Customer_838,23.0,51628.4,San Diego,2022-10-20,215.14,Electronics,2,True
+839,Customer_839,47.0,49501.55,San Antonio,2022-09-30,42.0,Home,5,True
+840,Customer_840,32.0,46878.25,Phoenix,2021-11-26,115.16,Home,1,True
+841,Customer_841,,48071.94,San Antonio,2021-11-20,2.57,Clothing,4,True
+842,Customer_842,43.0,21772.26,San Diego,2021-03-17,117.13,Sports,2,True
+843,Customer_843,,41769.13,New York,2022-04-03,37.99,Home,3,False
+844,Customer_844,40.0,51392.67,New York,2021-08-04,5.74,Home,5,False
+845,Customer_845,37.0,52397.85,Chicago,2022-01-11,94.11,Sports,5,False
+846,Customer_846,41.0,34584.87,Los Angeles,2021-04-14,27.55,Electronics,2,False
+847,Customer_847,38.0,68985.62,San Antonio,2022-03-11,48.91,Home,1,True
+848,Customer_848,64.0,37007.38,Houston,2022-06-21,8.4,Books,3,False
+849,Customer_849,27.0,64541.86,San Diego,2020-06-09,,Home,2,False
+850,Customer_850,29.0,56407.92,San Diego,2022-07-01,35.38,Electronics,4,False
+851,Customer_851,28.0,40306.59,San Diego,2021-08-14,9.4,Electronics,3,True
+852,Customer_852,28.0,76629.66,,2022-07-13,241.72,Clothing,5,False
+853,Customer_853,27.0,32095.45,Los Angeles,2021-04-17,0.61,Books,2,False
+854,Customer_854,49.0,63787.31,New York,2021-02-19,66.14,Electronics,5,True
+855,Customer_855,52.0,65008.73,Chicago,2022-09-28,,Sports,5,False
+856,Customer_856,28.0,39940.7,Chicago,2020-10-02,36.77,Books,5,True
+857,Customer_857,25.0,70886.98,Houston,2022-07-13,260.45,Books,1,False
+858,Customer_858,41.0,46249.3,Chicago,2021-06-14,17.64,Sports,5,True
+859,Customer_859,28.0,54330.4,San Diego,2021-07-16,337.65,Home,4,False
+860,Customer_860,43.0,53904.83,Philadelphia,2020-12-03,23.04,Sports,4,False
+861,Customer_861,37.0,47985.37,Los Angeles,2021-09-19,135.31,Sports,3,False
+862,Customer_862,17.0,62162.12,New York,2020-12-22,79.12,Home,5,True
+863,Customer_863,54.0,61902.33,Philadelphia,2020-02-13,215.83,Home,5,False
+864,Customer_864,57.0,,Los Angeles,2020-10-24,,Home,2,True
+865,Customer_865,28.0,69565.1,Phoenix,2020-01-07,76.48,Home,1,True
+866,Customer_866,30.0,25062.62,San Antonio,2022-12-07,21.75,Home,3,True
+867,Customer_867,38.0,65488.19,Houston,2022-11-23,18.18,Sports,5,True
+868,Customer_868,39.0,66900.58,San Diego,2021-03-08,248.28,Clothing,2,False
+869,Customer_869,43.0,,Chicago,2022-03-08,39.73,Clothing,1,False
+870,Customer_870,59.0,43837.79,Phoenix,2021-01-13,46.53,Electronics,3,False
+871,Customer_871,33.0,33414.43,Chicago,2022-01-04,142.64,Clothing,3,True
+872,Customer_872,25.0,46776.18,Philadelphia,2022-05-31,41.37,Clothing,5,False
+873,Customer_873,,45379.49,New York,2022-11-02,303.79,Sports,3,True
+874,Customer_874,26.0,61694.91,New York,2021-03-14,133.91,Home,2,True
+875,Customer_875,35.0,69654.63,New York,2022-05-07,90.99,Home,3,True
+876,Customer_876,57.0,70935.26,,2020-10-18,212.78,Sports,4,False
+877,Customer_877,,41567.48,Chicago,2022-12-20,5.09,Clothing,2,False
+878,Customer_878,38.0,46861.67,Phoenix,2020-01-29,29.71,Sports,1,True
+879,Customer_879,35.0,24748.43,New York,2021-10-22,62.56,Electronics,1,False
+880,Customer_880,,37911.95,Phoenix,2021-12-23,25.74,Home,5,False
+881,Customer_881,65.0,64472.77,Chicago,2022-01-23,136.22,Books,5,True
+882,Customer_882,29.0,74233.74,San Diego,2020-05-11,251.59,Electronics,4,True
+883,Customer_883,29.0,31484.77,Philadelphia,2022-10-24,55.12,Electronics,1,False
+884,Customer_884,,41113.04,San Diego,2020-07-17,41.88,Sports,1,True
+885,Customer_885,43.0,,Phoenix,2021-11-12,325.84,Clothing,1,True
+886,Customer_886,57.0,54202.42,San Diego,2020-08-31,58.85,Home,1,False
+887,Customer_887,42.0,37855.95,San Diego,2020-12-02,67.15,Books,3,False
+888,Customer_888,31.0,,Philadelphia,2021-08-21,43.33,Electronics,2,True
+889,Customer_889,42.0,42892.41,Chicago,2021-04-01,240.29,Books,2,False
+890,Customer_890,48.0,49783.22,Chicago,2020-06-24,84.15,Clothing,4,True
+891,Customer_891,45.0,58194.26,Houston,2020-07-06,143.62,Clothing,3,True
+892,Customer_892,41.0,50096.33,San Diego,2021-04-02,,Books,1,False
+893,Customer_893,48.0,43454.21,Chicago,2022-04-09,41.83,Home,1,True
+894,Customer_894,49.0,,Chicago,2022-09-10,56.86,Clothing,5,True
+895,Customer_895,52.0,48674.56,Los Angeles,2020-04-02,188.7,Books,5,True
+896,Customer_896,43.0,44449.83,New York,2021-03-06,45.14,Electronics,4,False
+897,Customer_897,,46118.06,Houston,2020-04-19,,Books,1,False
+898,Customer_898,37.0,73979.71,San Antonio,2020-01-19,283.01,Books,4,False
+899,Customer_899,49.0,58413.79,Houston,2021-12-25,97.61,Sports,3,True
+900,Customer_900,25.0,45567.8,Houston,2021-10-21,135.34,Clothing,2,True
+901,Customer_901,39.0,60454.32,San Antonio,2020-06-27,163.53,Home,1,False
+902,Customer_902,30.0,44992.71,Los Angeles,2020-09-13,,Home,3,False
+903,Customer_903,35.0,67596.87,San Diego,2020-01-26,50.26,Sports,1,False
+904,Customer_904,50.0,55544.63,Philadelphia,2022-07-03,5.26,Home,5,True
+905,Customer_905,37.0,48390.47,Chicago,2022-12-03,51.4,Books,4,False
+906,Customer_906,,56715.75,New York,2020-05-28,112.01,Sports,5,True
+907,Customer_907,,26436.86,Phoenix,2020-09-10,59.85,Electronics,2,False
+908,Customer_908,44.0,,San Diego,2022-08-08,138.22,Clothing,5,True
+909,Customer_909,43.0,32091.12,San Antonio,2022-10-11,44.16,Clothing,1,True
+910,Customer_910,61.0,52144.15,Philadelphia,2021-04-04,100.72,Clothing,5,False
+911,Customer_911,31.0,75987.72,San Diego,2020-02-25,20.63,Books,1,True
+912,Customer_912,38.0,83469.5,San Antonio,2020-02-13,138.38,Electronics,2,False
+913,Customer_913,,59570.77,Chicago,2021-09-20,,Sports,5,True
+914,Customer_914,54.0,57512.67,Los Angeles,2021-03-06,22.82,Sports,4,True
+915,Customer_915,34.0,,San Diego,2020-02-01,34.52,Clothing,4,False
+916,Customer_916,38.0,41859.89,San Antonio,2021-09-30,138.07,Electronics,4,True
+917,Customer_917,42.0,38183.24,Chicago,2020-01-13,65.89,Electronics,5,False
+918,Customer_918,,40687.29,Chicago,2022-05-12,24.34,Electronics,5,False
+919,Customer_919,30.0,47477.84,Los Angeles,2020-12-01,341.95,Home,5,False
+920,Customer_920,,42918.64,Houston,2020-02-14,125.57,Home,1,True
+921,Customer_921,48.0,20310.5,San Diego,2021-10-06,314.97,Clothing,2,True
+922,Customer_922,23.0,61218.65,San Diego,2021-03-11,55.71,Electronics,4,True
+923,Customer_923,,33908.85,Houston,2022-12-02,64.45,Electronics,1,False
+924,Customer_924,27.0,53588.7,New York,2021-08-18,228.23,Sports,4,False
+925,Customer_925,49.0,81111.24,New York,2020-10-28,74.45,Sports,1,True
+926,Customer_926,,36209.23,Houston,2022-02-15,122.85,Clothing,5,True
+927,Customer_927,28.0,12045.69,Philadelphia,2020-10-24,29.06,Electronics,4,False
+928,Customer_928,,45709.94,Phoenix,2022-09-17,59.19,Clothing,5,True
+929,Customer_929,54.0,66514.39,Chicago,2021-02-14,13.18,Sports,4,False
+930,Customer_930,34.0,79375.21,Phoenix,2021-08-25,23.06,Sports,3,True
+931,Customer_931,28.0,31556.76,Chicago,2020-02-25,0.09,Home,1,False
+932,Customer_932,58.0,57450.49,Houston,2021-04-11,4.01,Clothing,3,True
+933,Customer_933,,43020.34,New York,2022-06-30,378.47,Clothing,1,True
+934,Customer_934,9.0,,Philadelphia,2022-06-01,27.75,Electronics,2,False
+935,Customer_935,40.0,89665.15,New York,2020-09-02,108.86,Electronics,4,False
+936,Customer_936,29.0,27455.45,Phoenix,2020-09-04,182.7,Home,2,False
+937,Customer_937,23.0,53806.09,New York,2022-06-13,80.0,Books,2,True
+938,Customer_938,44.0,57015.4,Houston,2022-10-15,16.62,Books,1,False
+939,Customer_939,38.0,66286.79,Philadelphia,2020-04-14,,Books,3,False
+940,Customer_940,28.0,51469.75,Phoenix,2021-05-07,91.69,Clothing,5,True
+941,Customer_941,20.0,54620.76,Philadelphia,2021-01-04,131.4,Clothing,1,False
+942,Customer_942,45.0,44125.27,San Diego,2022-08-11,146.86,Sports,5,False
+943,Customer_943,43.0,54036.9,Chicago,2020-04-01,370.54,Clothing,2,False
+944,Customer_944,34.0,44852.12,New York,2020-08-19,85.23,Clothing,5,True
+945,Customer_945,57.0,59323.58,Philadelphia,2022-04-03,41.8,Clothing,3,True
+946,Customer_946,22.0,44455.84,Los Angeles,2020-02-26,104.54,Home,1,True
+947,Customer_947,17.0,55656.51,San Diego,2021-06-23,7.09,Clothing,3,False
+948,Customer_948,,49561.06,New York,2021-04-29,227.69,Electronics,3,True
+949,Customer_949,,,Chicago,2021-01-01,12.71,Electronics,1,False
+950,Customer_950,38.0,49229.09,Philadelphia,2021-03-08,39.73,Sports,3,False
+951,Customer_951,32.0,23404.51,Phoenix,2021-08-03,169.14,Home,4,False
+952,Customer_952,,68928.82,Chicago,2020-06-25,90.96,Electronics,4,True
+953,Customer_953,20.0,,Los Angeles,2021-09-18,50.03,Home,4,True
+954,Customer_954,,40193.5,Philadelphia,2022-05-31,64.14,Home,5,False
+955,Customer_955,34.0,41065.08,San Antonio,2022-04-12,192.79,Sports,3,False
+956,Customer_956,48.0,70616.57,San Antonio,2020-06-17,41.55,Home,1,True
+957,Customer_957,39.0,17964.89,Houston,2020-06-12,,Clothing,1,True
+958,Customer_958,40.0,97066.23,New York,2020-10-20,9.23,Home,5,True
+959,Customer_959,42.0,65840.85,Phoenix,2021-01-30,149.97,Sports,1,False
+960,Customer_960,40.0,53348.58,Houston,2021-03-23,188.09,Sports,4,True
+961,Customer_961,43.0,49176.59,Philadelphia,2022-01-14,20.07,Sports,3,True
+962,Customer_962,51.0,54283.31,San Antonio,2020-03-03,56.27,Electronics,1,True
+963,Customer_963,,57816.84,San Antonio,2020-02-07,18.09,Clothing,1,False
+964,Customer_964,44.0,59678.23,San Antonio,2021-03-05,122.62,Electronics,2,True
+965,Customer_965,34.0,58334.07,Philadelphia,2022-02-02,76.65,Books,2,False
+966,Customer_966,52.0,,San Antonio,2020-07-30,,Clothing,2,False
+967,Customer_967,27.0,47039.92,Chicago,2021-12-03,21.88,Home,3,False
+968,Customer_968,57.0,47730.9,San Diego,2020-10-11,23.79,Sports,4,True
+969,Customer_969,35.0,,Philadelphia,2022-08-28,4.24,Books,4,True
+970,Customer_970,18.0,67006.55,Phoenix,2022-09-07,38.87,Clothing,4,True
+971,Customer_971,37.0,58903.35,San Diego,2020-11-21,82.04,Electronics,3,False
+972,Customer_972,27.0,5894.17,Houston,2020-09-08,195.15,Sports,3,True
+973,Customer_973,,59838.51,Phoenix,2021-03-26,109.94,Electronics,2,False
+974,Customer_974,27.0,,San Diego,2020-09-20,57.16,Clothing,1,True
+975,Customer_975,30.0,49719.37,Los Angeles,2022-01-06,306.02,Clothing,5,True
+976,Customer_976,12.0,44172.22,San Antonio,2022-06-23,127.03,Books,5,True
+977,Customer_977,30.0,66861.69,Los Angeles,2022-01-07,266.16,Home,1,True
+978,Customer_978,6.0,,New York,2022-06-21,74.99,Electronics,2,False
+979,Customer_979,16.0,38406.83,New York,2021-03-10,29.96,Books,1,False
+980,Customer_980,44.0,56105.78,San Diego,2020-06-20,5.43,Sports,1,False
+981,Customer_981,,,Los Angeles,2022-03-19,129.49,Home,5,False
+982,Customer_982,40.0,29305.73,Philadelphia,2021-01-29,12.93,Books,2,True
+983,Customer_983,,40599.24,Phoenix,2022-01-05,36.06,Electronics,3,False
+984,Customer_984,34.0,62935.9,Los Angeles,2020-10-23,76.03,Clothing,5,False
+985,Customer_985,35.0,64296.88,New York,2020-03-29,83.11,Sports,3,False
+986,Customer_986,21.0,57696.28,Los Angeles,2022-12-22,91.77,Electronics,2,True
+987,Customer_987,53.0,60876.44,Philadelphia,2020-06-20,18.18,Home,1,False
+988,Customer_988,46.0,57742.67,Los Angeles,2022-12-18,47.76,Home,4,False
+989,Customer_989,32.0,40377.78,Phoenix,2022-12-06,96.02,Clothing,4,True
+990,Customer_990,35.0,56478.84,Houston,2022-05-19,350.05,Clothing,2,True
+991,Customer_991,38.0,62006.14,Philadelphia,2021-12-23,130.06,Sports,4,False
+992,Customer_992,10.0,61314.37,New York,2021-09-24,255.88,Sports,3,False
+993,Customer_993,32.0,67833.7,Phoenix,2022-08-06,143.64,Clothing,4,True
+994,Customer_994,,60624.56,Los Angeles,2020-11-12,89.58,Clothing,2,False
+995,Customer_995,23.0,55271.72,Los Angeles,2021-05-27,21.32,Home,2,True
+996,Customer_996,32.0,66052.25,Houston,2021-11-09,109.87,Clothing,3,False
+997,Customer_997,57.0,49602.18,New York,2021-03-26,97.65,Books,4,False
+998,Customer_998,43.0,36771.88,New York,2021-04-13,92.25,Electronics,4,False
+999,Customer_999,28.0,47554.0,Chicago,2020-12-27,,Clothing,1,False
+1000,Customer_1000,42.0,38826.46,New York,2021-09-09,75.22,Sports,5,False
+769,Customer_769,27.0,51848.07,Chicago,2021-01-28,239.91,Books,1,False
+182,Customer_182,,70880.03,Houston,2020-08-31,,Electronics,3,True
+944,Customer_944,34.0,44852.12,New York,2020-08-19,85.23,Clothing,5,True
+212,Customer_212,,39606.42,San Antonio,2022-09-07,51.2,Electronics,5,False
+630,Customer_630,48.0,62791.61,Houston,2021-02-19,,Home,1,False
+254,Customer_254,47.0,55610.85,Phoenix,2022-12-27,280.62,Electronics,5,True
+204,Customer_204,48.0,58149.47,San Diego,2020-05-06,6.4,Electronics,3,True
+470,Customer_470,28.0,56669.04,Chicago,2021-02-26,226.89,Clothing,4,False
+353,Customer_353,45.0,,Philadelphia,2020-03-14,13.16,Books,5,True
+67,Customer_67,34.0,30579.78,New York,2020-08-06,,Sports,3,True
+663,Customer_663,35.0,18172.18,New York,2020-01-12,54.3,Books,4,True
+998,Customer_998,43.0,36771.88,New York,2021-04-13,92.25,Electronics,4,False
+480,Customer_480,48.0,43438.13,Houston,2022-04-11,244.23,Home,4,False
+864,Customer_864,57.0,,Los Angeles,2020-10-24,,Home,2,True
+521,Customer_521,15.0,68315.51,San Diego,2022-04-30,14.86,Home,2,True
+592,Customer_592,29.0,6179.74,San Antonio,2020-08-15,167.1,Electronics,3,False
+589,Customer_589,,37586.15,Chicago,2022-10-05,39.87,Clothing,3,False
+318,Customer_318,31.0,45421.63,Phoenix,2021-11-27,109.82,Books,5,False
+748,Customer_748,26.0,57516.41,San Diego,2021-12-22,38.63,Books,4,True
+844,Customer_844,40.0,51392.67,New York,2021-08-04,5.74,Home,5,False
+341,Customer_341,25.0,52408.61,San Antonio,2020-02-12,10.31,Sports,4,True
+577,Customer_577,38.0,,Chicago,2020-09-30,290.09,Clothing,5,False
+562,Customer_562,60.0,38791.82,Chicago,2022-11-28,47.27,Sports,1,True
+849,Customer_849,27.0,64541.86,San Diego,2020-06-09,,Home,2,False
+637,Customer_637,45.0,35673.16,Chicago,2022-01-11,149.39,Clothing,2,False
+486,Customer_486,18.0,63988.86,Chicago,2020-11-23,36.59,Home,5,False
+628,Customer_628,,69215.25,New York,2020-11-03,217.49,Sports,4,False
+140,Customer_140,,60517.59,New York,2021-01-22,86.39,Home,3,True
+846,Customer_846,41.0,34584.87,Los Angeles,2021-04-14,27.55,Electronics,2,False
+248,Customer_248,27.0,38450.4,Houston,2020-03-13,35.14,Sports,2,False
+942,Customer_942,45.0,44125.27,San Diego,2022-08-11,146.86,Sports,5,False
+413,Customer_413,17.0,56838.32,Houston,2020-10-28,51.54,Electronics,4,False
+138,Customer_138,31.0,31585.88,Chicago,2021-08-09,100.07,Sports,5,True
+662,Customer_662,28.0,48228.97,San Diego,2022-11-20,104.62,Clothing,5,False
+969,Customer_969,35.0,,Philadelphia,2022-08-28,4.24,Books,4,True
+31,Customer_31,28.0,46139.35,Los Angeles,2020-06-18,,Clothing,1,True
+93,Customer_93,27.0,60914.44,Phoenix,2021-02-10,41.97,Clothing,3,False
+381,Customer_381,25.0,60168.89,San Antonio,2022-08-04,19.73,Books,4,False
+160,Customer_160,43.0,45127.53,San Antonio,2022-03-30,77.95,Home,1,False
+399,Customer_399,34.0,68006.21,Chicago,2022-05-30,19.95,Electronics,4,True
+483,Customer_483,16.0,75904.46,San Diego,2020-10-31,,Home,2,False
+689,Customer_689,44.0,54249.32,San Diego,2021-12-25,71.82,Clothing,5,True
+229,Customer_229,26.0,64458.19,New York,2022-07-12,,Books,5,False
+652,Customer_652,49.0,54886.94,Philadelphia,2020-10-17,405.93,Books,5,False
+627,Customer_627,,43290.17,Phoenix,2021-10-28,52.39,Home,3,False
+404,Customer_404,,60784.3,Houston,2022-01-08,86.36,Clothing,5,True
+508,Customer_508,25.0,64329.58,,2021-11-14,83.15,Clothing,4,False
+397,Customer_397,14.0,29793.11,Phoenix,2022-12-10,52.71,Home,3,True
+571,Customer_571,35.0,61913.97,New York,2022-05-21,36.02,Books,3,False
+919,Customer_919,30.0,47477.84,Los Angeles,2020-12-01,341.95,Home,5,False

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Results - Data Preprocessor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --info: #06b6d4;
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-info: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-warning: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1400px;
+        }
+
+        /* Success Header */
+        .success-header {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .success-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-success);
+        }
+
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--gradient-success);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            animation: scaleIn 0.6s ease;
+            box-shadow: 0 10px 40px rgba(16,185,129,0.4);
+        }
+
+        .success-icon i {
+            font-size: 3rem;
+            color: white;
+        }
+
+        .success-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient-success);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .success-header p {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin: 0;
+        }
+
+        /* Stats Comparison */
+        .comparison-card {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            height: 100%;
+            animation: fadeInUp 0.8s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comparison-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-info);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            transition: all 0.3s ease;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .stat-box.original {
+            border: 2px solid #cbd5e1;
+        }
+
+        .stat-box.cleaned {
+            border: 2px solid var(--success);
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        }
+
+        .stat-box h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            color: #64748b;
+        }
+
+        .stat-box.cleaned h4 {
+            color: var(--success);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-modern {
+            padding: 0.75rem 1.25rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin: 0.25rem;
+            display: inline-block;
+        }
+
+        /* Download Card */
+        .download-card {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            border-radius: 24px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(16,185,129,0.4);
+            height: 100%;
+            animation: fadeInUp 0.9s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-card::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .download-icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .download-icon i {
+            font-size: 3rem;
+            color: white;
+        }
+
+        .download-card h5 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-download {
+            background: white;
+            color: var(--success);
+            border: none;
+            border-radius: 16px;
+            padding: 1.25rem 3rem;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+            color: var(--success);
+        }
+
+        /* Modern Card */
+        .modern-card {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            animation: fadeInUp 1s ease;
+        }
+
+        .card-header-modern {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1.5rem 2rem;
+            border: none;
+        }
+
+        .card-header-modern.success {
+            background: var(--gradient-success);
+        }
+
+        .card-header-modern.info {
+            background: var(--gradient-info);
+        }
+
+        .card-header-modern h5 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .card-body-modern {
+            padding: 2rem;
+        }
+
+        /* Processing Steps */
+        .step-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            transition: all 0.3s ease;
+            animation: slideInLeft 0.5s ease;
+            animation-fill-mode: both;
+        }
+
+        .step-item:nth-child(1) { animation-delay: 0.1s; }
+        .step-item:nth-child(2) { animation-delay: 0.2s; }
+        .step-item:nth-child(3) { animation-delay: 0.3s; }
+        .step-item:nth-child(4) { animation-delay: 0.4s; }
+        .step-item:nth-child(5) { animation-delay: 0.5s; }
+
+        .step-item:hover {
+            transform: translateX(10px);
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        }
+
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .step-icon i {
+            color: white;
+            font-size: 1rem;
+        }
+
+        .step-text {
+            flex: 1;
+            font-weight: 500;
+            color: #1e293b;
+        }
+
+        /* Table Styles */
+        .table-modern {
+            margin: 0;
+        }
+
+        .table-modern thead {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .table-modern thead th {
+            border: none;
+            padding: 1rem;
+            font-weight: 700;
+            color: #1e293b;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+
+        .table-modern tbody tr {
+            border-bottom: 1px solid #f1f5f9;
+            transition: all 0.2s ease;
+        }
+
+        .table-modern tbody tr:hover {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .table-modern tbody td {
+            padding: 1rem;
+            vertical-align: middle;
+        }
+
+        /* Action Buttons */
+        .action-section {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .action-section h5 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 2rem;
+        }
+
+        .btn-action {
+            border-radius: 12px;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.875rem;
+            margin: 0.5rem;
+        }
+
+        .btn-primary-action {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 8px 24px rgba(102,126,234,0.4);
+        }
+
+        .btn-primary-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(102,126,234,0.5);
+        }
+
+        .btn-success-action {
+            background: var(--gradient-success);
+            color: white;
+            box-shadow: 0 8px 24px rgba(16,185,129,0.4);
+        }
+
+        .btn-success-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(16,185,129,0.5);
+        }
+
+        .btn-outline-action {
+            background: white;
+            color: #64748b;
+            border: 2px solid #e2e8f0;
+        }
+
+        .btn-outline-action:hover {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Tips Section */
+        .tips-card {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            border: none;
+            box-shadow: 0 8px 24px rgba(59,130,246,0.2);
+            animation: fadeInUp 1.3s ease;
+        }
+
+        .tips-card h6 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .tips-card ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .tips-card li {
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Confetti Effect */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: var(--success);
+            position: absolute;
+            animation: confettiFall 3s linear;
+        }
+
+        @keyframes confettiFall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .success-header h1 {
+                font-size: 2rem;
+            }
+            
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .btn-action {
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Success Header -->
+       {% extends "base.html" %}
+
+{% block title %}Download Results - Data Preprocessor{% endblock %}
+
+{% block content %}
+<div class="success-header text-center mb-5">
+    <div class="success-icon">
+        <i class="fas fa-check"></i>
+    </div>
+    <h1>Processing Complete!</h1>
+    <p>Your data has been successfully cleaned and is ready for download</p>
+</div>
+
+<!-- Comparison + Download -->
+<div class="row mb-4">
+    <div class="col-lg-6 mb-4">
+        <div class="comparison-card">
+            <h5 class="mb-4"><i class="fas fa-chart-line me-2"></i>Data Transformation</h5>
+            <div class="comparison-grid">
+                <div class="stat-box original">
+                    <h4>Original</h4>
+                    <div class="stat-number">{{ results.original_shape[0] }}</div>
+                    <small class="text-muted">×</small>
+                    <div class="stat-number">{{ results.original_shape[1] }}</div>
+                    <small class="text-muted d-block mt-2">rows × columns</small>
+                </div>
+                <div class="stat-box cleaned">
+                    <h4>Cleaned</h4>
+                    <div class="stat-number">{{ results.final_shape[0] }}</div>
+                    <small class="text-muted">×</small>
+                    <div class="stat-number">{{ results.final_shape[1] }}</div>
+                    <small class="text-muted d-block mt-2">rows × columns</small>
+                </div>
+            </div>
+            <div class="text-center">
+                {% set rows_removed = results.original_shape[0] - results.final_shape[0] %}
+                {% set cols_removed = results.original_shape[1] - results.final_shape[1] %}
+                {% if rows_removed > 0 %}
+                <span class="badge-modern" style="background: linear-gradient(135deg, #fed7aa 0%, #fecaca 100%); color: #9a3412;">
+                    <i class="fas fa-minus-circle me-1"></i>{{ rows_removed }} rows removed
+                </span>
+                {% endif %}
+                {% if cols_removed > 0 %}
+                <span class="badge-modern" style="background: linear-gradient(135deg, #fed7aa 0%, #fecaca 100%); color: #9a3412;">
+                    <i class="fas fa-minus-circle me-1"></i>{{ cols_removed }} columns removed
+                </span>
+                {% endif %}
+                {% if rows_removed == 0 and cols_removed == 0 %}
+                <span class="badge bg-success">No data removed</span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 mb-4">
+        <div class="download-card">
+            <div class="download-icon"><i class="fas fa-file-download"></i></div>
+            <h5>Your Cleaned Dataset</h5>
+            <p class="mb-4" style="opacity: 0.9;">{{ results.filename }}</p>
+            <a href="{{ url_for('download_file') }}" class="btn-download">
+                <i class="fas fa-download me-2"></i>Download Now
+            </a>
+            <p class="mt-3 mb-0" style="font-size: 0.875rem; opacity: 0.8;">
+                <i class="fas fa-shield-alt me-1"></i>Secure download • Ready to use
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Processing Steps -->
+{% if results.processing_log %}
+<div class="modern-card">
+    <div class="card-header-modern success">
+        <h5><i class="fas fa-list-check me-2"></i>Processing Steps Performed</h5>
+    </div>
+    <div class="card-body-modern">
+        <ul class="step-list">
+            {% for step in results.processing_log %}
+            <li class="step-item">
+                <div class="step-icon"><i class="fas fa-check"></i></div>
+                <div class="step-text">{{ step }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+
+<!-- Data Preview -->
+{% if results.preview %}
+<div class="modern-card">
+    <div class="card-header-modern info">
+        <h5><i class="fas fa-eye me-2"></i>Cleaned Data Preview</h5>
+    </div>
+    <div class="card-body-modern">
+        <div class="table-responsive">
+            {{ results.preview|safe }}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Statistical Summary -->
+{% if results.summary %}
+<div class="modern-card">
+    <div class="card-header-modern">
+        <h5><i class="fas fa-chart-bar me-2"></i>Statistical Summary</h5>
+    </div>
+    <div class="card-body-modern">
+        <div class="table-responsive">
+            {{ results.summary|safe }}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Action Buttons -->
+<div class="action-section mb-4">
+    <h5>What's Next?</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="{{ url_for('index') }}" class="btn-action btn-primary-action">
+            <i class="fas fa-upload me-2"></i>Process Another File
+        </a>
+        <a href="{{ url_for('download_file') }}" class="btn-action btn-success-action">
+            <i class="fas fa-download me-2"></i>Download Again
+        </a>
+        <a href="{{ url_for('reset') }}" class="btn-action btn-outline-action">
+            <i class="fas fa-rotate me-2"></i>Start Over
+        </a>
+    </div>
+</div>
+
+<!-- Tips -->
+<div class="tips-card">
+    <h6><i class="fas fa-lightbulb me-2"></i>Tips for Using Your Cleaned Data</h6>
+    <ul>
+        <li>Your cleaned dataset is now ready for analysis or machine learning workflows</li>
+        <li>Review the statistical summary to understand your data distribution patterns</li>
+        <li>Consider additional feature engineering based on your project needs</li>
+        <li>The processing log shows all transformations applied for transparency</li>
+        <li>Keep the original file as backup before applying further transformations</li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Confetti celebration
+    function createConfetti() {
+        const colors = ['#10b981', '#06b6d4', '#6366f1', '#f59e0b', '#ec4899'];
+        for (let i = 0; i < 40; i++) {
+            setTimeout(() => {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * window.innerWidth + 'px';
+                confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 3000);
+            }, i * 30);
+        }
+    }
+    createConfetti();
+
+    // Track download
+    const downloadBtn = document.querySelector('a[href*="download_file"]');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => console.log('Download initiated'));
+    }
+});
+</script>
+{% endblock %}
+
+</body>
+</html>

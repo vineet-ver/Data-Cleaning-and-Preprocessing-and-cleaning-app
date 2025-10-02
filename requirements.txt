@@ -1,0 +1,7 @@
+flask
+pandas
+numpy
+openpyxl
+xlrd
+werkzeug
+gunicorn

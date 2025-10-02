@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Data - Data Preprocessor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --success: #10b981;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.9);
+            font-weight: 300;
+        }
+
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 8px 24px rgba(102,126,234,0.4);
+        }
+
+        .feature-card:nth-child(2) .feature-icon {
+            background: var(--gradient-2);
+            box-shadow: 0 8px 24px rgba(245,87,108,0.4);
+        }
+
+        .feature-card:nth-child(3) .feature-icon {
+            background: var(--gradient-3);
+            box-shadow: 0 8px 24px rgba(79,172,254,0.4);
+        }
+
+        .feature-card h5 {
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            margin: 0;
+        }
+
+        .upload-section {
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            box-shadow: 0 20px 80px rgba(0,0,0,0.15);
+            animation: fadeInUp 1s ease;
+        }
+
+        .section-header {
+            background: var(--gradient-1);
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 20px 20px 0 0;
+            margin: -3rem -3rem 2rem -3rem;
+        }
+
+        .section-header h4 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .file-drop-zone {
+            border: 3px dashed #cbd5e1;
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .file-drop-zone::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .file-drop-zone:hover {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+        }
+
+        .file-drop-zone.drag-over {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            transform: scale(1.02);
+        }
+
+        .file-drop-zone.drag-over::before {
+            opacity: 0.05;
+        }
+
+        .upload-icon {
+            font-size: 5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-control {
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(99,102,241,0.1);
+        }
+
+        .btn-upload {
+            background: var(--gradient-1);
+            border: none;
+            border-radius: 12px;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(102,126,234,0.4);
+        }
+
+        .btn-upload:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(102,126,234,0.5);
+        }
+
+        .steps-section {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 3rem;
+            margin-top: 3rem;
+            box-shadow: 0 20px 80px rgba(0,0,0,0.1);
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .steps-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .steps-header h5 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .step-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            box-shadow: 0 8px 24px rgba(102,126,234,0.4);
+            transition: all 0.3s ease;
+        }
+
+        .step-item:hover .step-number {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .step-item:nth-child(2) .step-number {
+            background: var(--gradient-2);
+            box-shadow: 0 8px 24px rgba(245,87,108,0.4);
+        }
+
+        .step-item:nth-child(3) .step-number {
+            background: var(--gradient-3);
+            box-shadow: 0 8px 24px rgba(79,172,254,0.4);
+        }
+
+        .step-item:nth-child(4) .step-number {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            box-shadow: 0 8px 24px rgba(250,112,154,0.4);
+        }
+
+        .step-item h6 {
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+
+        .step-item p {
+            color: #64748b;
+            margin: 0;
+        }
+
+        .file-info {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%);
+            border-radius: 12px;
+            animation: slideIn 0.5s ease;
+        }
+
+        .file-info.show {
+            display: block;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .upload-section {
+                padding: 2rem;
+            }
+            
+            .section-header {
+                margin: -2rem -2rem 2rem -2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+  {% extends "base.html" %}
+
+{% block title %}Upload Data - Data Preprocessor{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1 class="hero-title">
+            <i class="fas fa-magic me-3"></i>Data Preprocessor
+        </h1>
+        <p class="hero-subtitle">Transform your raw data into clean, analysis-ready datasets with AI-powered preprocessing</p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="feature-cards">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-file-csv"></i>
+            </div>
+            <h5>Multiple Formats</h5>
+            <p>Support for CSV, Excel (.xlsx, .xls) files up to 16MB</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+            <h5>Smart Cleaning</h5>
+            <p>Handle missing values, duplicates, and data type conversions</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-download"></i>
+            </div>
+            <h5>Easy Download</h5>
+            <p>Get your cleaned dataset with detailed processing summary</p>
+        </div>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+        <div class="section-header">
+            <h4><i class="fas fa-cloud-upload-alt me-2"></i>Upload Your Dataset</h4>
+        </div>
+
+        <form method="POST" action="{{ url_for('upload_file') }}" enctype="multipart/form-data" id="uploadForm">
+            <div class="file-drop-zone" id="dropZone">
+                <div class="upload-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <h5 class="mb-3">Drag & Drop your file here</h5>
+                <p class="text-muted mb-3">or</p>
+                <div class="file-input-wrapper">
+                    <input type="file" 
+                           class="form-control" 
+                           name="file" 
+                           accept=".csv,.xlsx,.xls" 
+                           required
+                           id="fileInput">
+                </div>
+                <small class="text-muted d-block mt-3">
+                    <i class="fas fa-info-circle me-1"></i>
+                    Supported: CSV, Excel (.xlsx, .xls) • Max size: 16MB
+                </small>
+            </div>
+
+            <div class="file-info" id="fileInfo">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-file-alt fa-2x text-primary me-3"></i>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-1" id="fileName"></h6>
+                        <small class="text-muted" id="fileSize"></small>
+                    </div>
+                    <i class="fas fa-check-circle fa-2x text-success"></i>
+                </div>
+            </div>
+            
+            <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-upload">
+                    <i class="fas fa-rocket me-2"></i>Upload & Analyze Data
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="steps-section">
+        <div class="steps-header">
+            <h5><i class="fas fa-route me-2"></i>How It Works</h5>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h6>Upload File</h6>
+                    <p>Upload your CSV or Excel file</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h6>Analyze Data</h6>
+                    <p>Review data quality and issues</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h6>Choose Options</h6>
+                    <p>Select cleaning and preprocessing</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h6>Download</h6>
+                    <p>Get your cleaned dataset</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const fileInfo = document.getElementById('fileInfo');
+    const fileName = document.getElementById('fileName');
+    const fileSize = document.getElementById('fileSize');
+
+    // Drag and drop functionality
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropZone.addEventListener(eventName, preventDefaults, false);
+    });
+
+    function preventDefaults(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+        dropZone.addEventListener(eventName, () => {
+            dropZone.classList.add('drag-over');
+        }, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+        dropZone.addEventListener(eventName, () => {
+            dropZone.classList.remove('drag-over');
+        }, false);
+    });
+
+    dropZone.addEventListener('drop', function(e) {
+        const dt = e.dataTransfer;
+        const files = dt.files;
+        fileInput.files = files;
+        handleFiles(files);
+    });
+
+    // File input change
+    fileInput.addEventListener('change', function(e) {
+        if (e.target.files.length > 0) {
+            handleFiles(e.target.files);
+        }
+    });
+
+    function handleFiles(files) {
+        const file = files[0];
+        const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
+        
+        fileName.textContent = file.name;
+        fileSize.textContent = `${fileSizeMB} MB`;
+        fileInfo.classList.add('show');
+    }
+</script>
+{% endblock %}
+
+    </script>
+</body>
+</html>

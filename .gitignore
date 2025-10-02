@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+myenv/
+
+# Environment variables
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter / IPython
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Uploaded & processed data
+uploads/
+cleaned_data/
+
+# Python cache / build
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Render specific
+*.sqlite3
